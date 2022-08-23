@@ -30,7 +30,7 @@ seo:
 	*Introduction to Programming in Java* by Sedgewick and Wayne (textbook),
         [official Java tutorials](https://docs.oracle.com/javase/tutorial/), 
         [Introduction to Programming Using Java](http://math.hws.edu/javanotes/index.html) (free online textbook)
-- Java in the browser: [Repl.it](http://repl.it), <a href="http://codehs.com">CodeHS</a>
+- Java in the browser: [Repl.it](http://repl.it/new/java), <a href="http://codehs.com">CodeHS</a>
 - <a href="https://docs.oracle.com/en/java/javase/17/docs/api/">Official Java documentation</a>
      
 
