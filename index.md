@@ -20,7 +20,7 @@ seo:
 
 ## Administrivia
 - Instructor: Phillip Kirlin
-- Office hours: TBA.  Also available by appointment.
+- Office hours: Mon 12-1, Tue 9-10:30, Wed 3-4, Thu 10-11:30.  Also available by appointment and over Slack.
 - [Canvas page](https://rhodes.instructure.com/courses/4029): Use for grades, online assignment submissions, and assignment solutions.
 - [Syllabus](syllabus/syllabus-142-f22.pdf) and [additional policies](syllabus/additional-policies.pdf).
 - Tutoring hours: TBA 
