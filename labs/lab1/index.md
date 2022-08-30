@@ -35,7 +35,7 @@ variables, if statements, and loops.
    on your operating system and browser.
 
    - [LeroyAndTheCookies.java](LeroyAndTheCookies.java)
-   - [LeroyAndTheCookies.md](LeroyAndTheCookies.md)
+   - [LeroyAndTheCookies.md](https://raw.githubusercontent.com/pkirlin/cs142-f22/main/labs/lab1/LeroyAndTheCookies.md)
    - [OneIsZero.java](OneIsZero.java)
 
 3. In the left-hand panel, find the `src` folder.  This is where your Java files 
