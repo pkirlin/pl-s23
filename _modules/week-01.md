@@ -25,3 +25,6 @@ Mon, Aug 29
   [functions practice](lectures/intro/functions-practice.pdf).  
 : **Reading**{: .label .label-reading} Liang chapter 5 (loops) and chapter 6 (functions).
 
+Wed, Aug 31
+: **Lab**{: .label .label-lab } [**Lab 1**](labs/lab1/)
+: **Reading**{: .label .label-reading} Liang 7.0-7.8 (arrays).
