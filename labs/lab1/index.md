@@ -53,8 +53,14 @@ variables, if statements, and loops.
     the instructions in this file.  This is where you will answer the questions
     for the lab.
 
+
 ## Part B: One Is Zero
 
 After you finish Part A, try to write the second program from our previous
 class, "One is Zero."  Directions are in the `OneIsZero.java` file (or see the
 class webpage or your handout.)
+
+## Submitting the lab
+
+At the end of the lab session, upload the two `LeroyAndTheCookies` files to canvas.
+Also include `OneIsZero.java` if you made any progress on that.
