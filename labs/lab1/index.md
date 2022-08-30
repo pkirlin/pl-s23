@@ -7,6 +7,7 @@ parent: Labs
 
 ## Part A: Leroy and the Cookies
 
+<img src="leroy.jpg" width=300 align=right>
 In Part A, you will play a game already written for you in Java.  Through 
 playing the game and investigating the code, you will practice with Java 
 variables, if statements, and loops.
