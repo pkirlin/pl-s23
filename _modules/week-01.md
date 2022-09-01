@@ -28,3 +28,8 @@ Mon, Aug 29
 Wed, Aug 31
 : **Lab**{: .label .label-lab } [**Lab 1**](labs/lab1/)
 : **Reading**{: .label .label-reading} Liang 7.0-7.8 (arrays).
+: **Project**{: .label .label-proj } [**Project 1**](projects/proj1) (due Thu, Sep 8)
+
+Fri, Sep 3
+: **Practice with functions.**  
+  [Handout with practice problems](lectures/intro/functions-practice.pdf).  
