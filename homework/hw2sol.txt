@@ -1,0 +1,216 @@
+HW2 solutions
+
+1.
+
+
+public class Connect4Dropper {
+
+    /**
+     * Returns the row of the connect-4 board that the token will land in,
+     * provided it is dropped in the column indicated by "col".  Returns
+     * -1 if the column indicated is full.
+     *
+     * Note that the "top" row of the board is row 0.
+     */
+    public static int whichRow(char[][] board, int col)
+    {
+        for (int row = board.length - 1; row >= 0; row--)
+        {
+            if (board[row][col] == ' ') return row;
+        }
+        return -1;
+    }
+
+    public static void main(String[] args)
+    {
+        char[][] board1 = new char[][]
+                {
+                        {' ', ' ', ' '},
+                        {'X', ' ', 'X'},
+                        {'O', 'X', 'O'},
+                        {'X', 'O', 'X'},
+                };
+
+        char[][] board2 = new char[][]
+                {
+                        {' ', ' ', 'O', ' '},
+                        {' ', ' ', 'X', ' '},
+                        {'O', 'X', 'O', ' '},
+                        {'X', 'O', 'X', ' '},
+                        {'X', 'O', 'X', ' '},
+                };
+
+        char[][] board3 = new char[][]
+                {
+                        {' ', ' ', 'O', ' ', ' ', ' '},
+                        {' ', ' ', 'X', 'X', ' ', ' '},
+                        {'O', ' ', 'O', 'O', ' ', ' '},
+                        {'X', ' ', 'X', 'X', 'X', 'X'},
+                };
+
+        // Tests:
+        System.out.println(whichRow(board1, 0));
+        System.out.println(whichRow(board1, 1));
+        System.out.println(whichRow(board1, 2));
+        System.out.println(whichRow(board2, 0));
+        System.out.println(whichRow(board2, 1));
+        System.out.println(whichRow(board2, 2));
+        System.out.println(whichRow(board2, 3));
+        System.out.println(whichRow(board3, 0));
+        System.out.println(whichRow(board3, 1));
+        System.out.println(whichRow(board3, 2));
+        System.out.println(whichRow(board3, 3));
+        System.out.println(whichRow(board3, 4));
+        System.out.println(whichRow(board3, 5));
+    }
+}
+
+
+2.
+
+class Circle
+{
+    /** The radius of the circle. */
+    private int radius;
+
+    /** Construct a new circle from its radius. */
+    public Circle(int theRadius) {
+        radius = theRadius;
+    }
+
+    /** Return the area of this circle. */
+    public double getArea() {
+        return Math.PI * radius * radius;
+    }
+
+    /** Return the circumference of this circle. */
+    public double getCircumference() {
+        return 2 * Math.PI * radius;
+    }
+}
+
+public class CircleDemo {
+    public static void main(String[] args)
+    {
+        Circle circ1 = new Circle(3);
+        Circle circ2 = new Circle(7);
+
+        System.out.println("The area of the first circle is:");
+        System.out.println(circ1.getArea());
+        System.out.println("The area of the second circle is:");
+        System.out.println(circ2.getArea());
+
+        System.out.println("The circumference of the first circle is:");
+        System.out.println(circ1.getCircumference());
+        System.out.println("The circumference of the second circle is:");
+        System.out.println(circ2.getCircumference());
+    }
+}
+
+
+3.
+
+
+class Rectangle
+{
+    private int width, height;
+
+    public Rectangle(int w, int h) { 
+      width = w; height = h; 
+    }
+    
+    public int getArea() { 
+      return width * height; 
+    }
+    
+    public int getPerimeter() { 
+      return 2 * (width+height); 
+    }
+}
+
+public class RectangleDemo {
+    public static void main(String[] args)
+    {
+        Rectangle rect1 = new Rectangle(3, 4);
+        Rectangle rect2 = new Rectangle(7, 5);
+
+        System.out.println("The area of the first rectangle is:");
+        System.out.println(rect1.getArea());
+        System.out.println("The area of the second rectangle is:");
+        System.out.println(rect2.getArea());
+
+        System.out.println("The perimeter of the first rectangle is:");
+        System.out.println(rect1.getPerimeter());
+        System.out.println("The perimeter of the second rectangle is:");
+        System.out.println(rect2.getPerimeter());
+    }
+}
+
+4.
+
+
+class Stock
+{
+    /** The symbol for the stock. */
+    private String symbol;
+
+    /** The price of the stock at the beginning of each day. */
+    private double[] openingPrices;
+
+    /** The price of the stock at the end of each day. */
+    private double[] closingPrices;
+
+    /** Construct a new stock, given its symbol and arrays for opening and closing prices. */
+    public Stock(String newSymbol, double[] newOpeningPrices, double[] newClosingPrices)
+    {
+        symbol = newSymbol;
+        openingPrices = newOpeningPrices;
+        closingPrices = newClosingPrices;
+    }
+
+    /** Return the number of days for which we have price information about the stock. */
+    public int getNumberOfDays() {
+        return openingPrices.length;
+    }
+
+    /** Return the opening price of a stock on a specific day. */
+    public double getOpeningPrice(int day) {
+        return openingPrices[day];
+    }
+
+    /** Return the opening price of a stock on a specific day. */
+    public double getClosingPrice(int day) {
+        return closingPrices[day];
+    }
+}
+
+public class FindBiggestChange {
+    /** Returns the index of the day on which the largest change in stock price occurred. */
+    public static int findBiggestChange(Stock stock) {
+        double maxdiff = 0;
+        int theday = 0;
+        for (int i = 0; i < stock.getNumberOfDays(); i++) {
+            double thediff = Math.abs(stock.getClosingPrice(i) - stock.getOpeningPrice(i));
+            if (thediff > maxdiff) {
+                theday = i;
+                maxdiff = thediff;
+            }
+        }
+        return theday;
+    }
+
+    public static void main(String[] args) {
+        Stock apple = new Stock("AAPL",
+                new double[] {146.92, 146.83, 145.85, 143.43, 142.94},
+                new double[] {145.66, 146.65, 144.45, 143.93, 143.80});
+        Stock twitter = new Stock("TWTR",
+                new double[] {67.22, 66.25, 62.69, 62.78},
+                new double[] {66.09, 64.79, 62.05, 61.51});
+        Stock google = new Stock("GOOG",
+                new double[] {2852.66, 2836.53, 2818.77, 2792.93, 2780.34, 2829.27},
+                new double[] {2818.92, 2832.19, 2801.01, 2802.34, 2780.00, 2875.97});
+
+        int answer = findBiggestChange(apple); 
+        System.out.println("Day of biggest change: " + answer);
+    }
+}

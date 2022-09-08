@@ -30,6 +30,19 @@ Wed, Aug 31
 : **Reading**{: .label .label-reading} Liang 7.0-7.8 (arrays).
 : **Project**{: .label .label-proj } [**Project 1**](projects/proj1) (due Thu, Sep 8)
 
-Fri, Sep 3
+Fri, Sep 2
 : **Practice with functions.**  
   [Handout with practice problems](lectures/intro/functions-practice.pdf).  
+
+Mon, Sep 5
+: **Labor Day**
+
+Wed, Sep 7
+: **Lab**{: .label .label-lab } [**Lab 2**](labs/lab2/)
+: **Homework**{: .label .label-hw } [**Homework 1**](homework/hw1) (due Thu, Sep 15)
+
+Fri, Sep 9
+: **Object-Oriented Programming I**  
+  Introduction to OOP concepts and terminology.  
+  [OOP definitions](lectures/oop/oop-defs.pdf)
+: **Reading**{: .label .label-reading} S&W 3.1, pp. 329-325 (OO concepts).
