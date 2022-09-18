@@ -45,18 +45,31 @@ Fri, Sep 9
 : **Object-Oriented Programming I**  
   Introduction to OOP concepts and terminology.  
   [OOP definitions](lectures/oop/oop-defs.pdf)
-: [**12pm code**](https://github.com/pkirlin/cs142-f22-inclass/tree/10am/src/functions/FunctionPractice.java){: .label-button } 
-	[**1pm code**](https://github.com/pkirlin/cs142-f22-inclass/tree/11am/src/functions/FunctionPractice.java){: .label-button }
-: **Reading**{: .label .label-reading} S&W 3.1, pp. 329-325 (OO concepts).
+: [**10am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/10am/src/functions/FunctionPractice.java){: .label-button } 
+	[**11am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/11am/src/functions/FunctionPractice.java){: .label-button }
+: **Reading**{: .label .label-reading} Sedgewick & Wayne 3.1, pp. 329-325 (OO concepts).
 
 Mon, Sep 12
 : **Object-Oriented Programming II**  
   Using classes and objects designed by others.  
   [SimpleCanvas and Color APIs](lectures/oop/simplecanvas-and-color.pdf)
-: [**12pm code**](https://github.com/pkirlin/cs142-f22-inclass/tree/10am/src/oop1){: .label-button } 
-	[**1pm code**](https://github.com/pkirlin/cs142-f22-inclass/tree/11am/src/oop1){: .label-button }
+: [**10am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/10am/src/oop1){: .label-button } 
+  [**11am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/11am/src/oop1){: .label-button }
 
 Wed, Sep 14
 : **Lab**{: .label .label-lab } [**Lab 3**](labs/lab3/)
 : **Reading**{: .label .label-reading} Liang chapter 8 (multidimensional arrays).
 
+Fri, Sep 16
+: **Object-Oriented Programming III**  
+  OOP "gotchas" and learning about references.  
+  [Gotchas handout](lectures/oop/oop-gotchas-handout.pdf)
+: [**10am code**](https://github.com/pkirlin/cs142-f21-inclass/tree/10am/src/oop1){: .label-button } 
+  [**11am code**](https://github.com/pkirlin/cs142-f21-inclass/tree/11am/src/oop1){: .label-button }
+  
+Fri, Sep 17
+: **Creating Classes I**  
+  Learning how to design simple classes.  
+  [Class design handout](lectures/oop/oop-creating-classes-handout.pdf)
+: [**Slides**](lectures/oop/oop-creating-classes-slides1.pdf){: .label-button } 
+: **Reading**{: .label .label-reading} Liang 9.1-9.3, 9.5 (creating classes).
