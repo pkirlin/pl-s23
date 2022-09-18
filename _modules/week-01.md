@@ -64,8 +64,8 @@ Fri, Sep 16
 : **Object-Oriented Programming III**  
   OOP "gotchas" and learning about references.  
   [Gotchas handout](lectures/oop/oop-gotchas-handout.pdf)
-: [**10am code**](https://github.com/pkirlin/cs142-f21-inclass/tree/10am/src/oop1){: .label-button } 
-  [**11am code**](https://github.com/pkirlin/cs142-f21-inclass/tree/11am/src/oop1){: .label-button }
+: [**10am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/10am/src/oop1){: .label-button } 
+  [**11am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/11am/src/oop1){: .label-button }
   
 Fri, Sep 17
 : **Creating Classes I**  
