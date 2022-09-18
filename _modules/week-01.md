@@ -73,3 +73,4 @@ Fri, Sep 17
   [Class design handout](lectures/oop/oop-creating-classes-handout.pdf)
 : [**Slides**](lectures/oop/oop-creating-classes-slides1.pdf){: .label-button } 
 : **Reading**{: .label .label-reading} Liang 9.1-9.3, 9.5 (creating classes).
+: **Project**{: .label .label-proj } [**Project 1**](projects/proj2) (due Thu, Sep 29)
