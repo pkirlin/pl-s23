@@ -67,10 +67,21 @@ Fri, Sep 16
 : [**10am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/10am/src/oop1){: .label-button } 
   [**11am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/11am/src/oop1){: .label-button }
   
-Fri, Sep 17
+Mon, Sep 19
 : **Creating Classes I**  
   Learning how to design simple classes.  
   [Class design handout](lectures/oop/oop-creating-classes-handout.pdf)
 : [**Slides**](lectures/oop/oop-creating-classes-slides1.pdf){: .label-button } 
+  [**10am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/10am/src/oop2){: .label-button } 
+  [**11am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/11am/src/oop2){: .label-button }
 : **Reading**{: .label .label-reading} Liang 9.1-9.3, 9.5 (creating classes).
 : **Project**{: .label .label-proj } [**Project 1**](projects/proj2) (due Thu, Sep 29)
+
+Wed, Sep 21
+: **Lab**{: .label .label-lab } [**Lab 4**](labs/lab4/)
+
+Fri, Sep 23
+: **Creating Classes II**  
+  Public/private, constructors, passing objects as arguments to methods.
+: [**Slides**](lectures/oop/creating-classes-day2-slides.pdf){: .label-button } 
+: **Reading**{: .label .label-reading} Liang 9.4, 9.8 (constructors, public/private).
