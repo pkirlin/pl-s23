@@ -75,7 +75,7 @@ Mon, Sep 19
   [**10am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/10am/src/oop2){: .label-button } 
   [**11am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/11am/src/oop2){: .label-button }
 : **Reading**{: .label .label-reading} Liang 9.1-9.3, 9.5 (creating classes).
-: **Project**{: .label .label-proj } [**Project 1**](projects/proj2) (due Thu, Sep 29)
+: **Project**{: .label .label-proj } [**Project 2**](projects/proj2) (due Thu, Sep 29)
 
 Wed, Sep 21
 : **Lab**{: .label .label-lab } [**Lab 4**](labs/lab4/)
