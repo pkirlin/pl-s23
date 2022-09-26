@@ -82,6 +82,12 @@ Wed, Sep 21
 
 Fri, Sep 23
 : **Creating Classes II**  
-  Public/private, constructors, passing objects as arguments to methods.
+  `public` and `private`.
+: **Reading**{: .label .label-reading} Liang 9.8 (public/private).
+
+Mon, Sep 26
+: **Creating Classes III**  
+  Constructors.
 : [**Slides**](lectures/oop/creating-classes-day2-slides.pdf){: .label-button } 
-: **Reading**{: .label .label-reading} Liang 9.4, 9.8 (constructors, public/private).
+: **Reading**{: .label .label-reading} Liang 9.4 (constructors).
+: **Homework**{: .label .label-hw } [**Homework 2**](homework/hw2) (due Mon, Oct 3)
