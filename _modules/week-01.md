@@ -91,3 +91,33 @@ Mon, Sep 26
 : [**Slides**](lectures/oop/creating-classes-day2-slides.pdf){: .label-button } 
 : **Reading**{: .label .label-reading} Liang 9.4 (constructors).
 : **Homework**{: .label .label-hw } [**Homework 2**](homework/hw2) (due Mon, Oct 3)
+
+Wed, Sep 28
+: **Lab**{: .label .label-lab } [**Lab 5**](labs/lab5/)
+
+Fri, Sep 30
+: **OO Design Practices**  
+  Designing a `Fraction` class.
+
+Mon, Oct 3
+: **Review for midterm**
+
+Wed, Oct 5
+: **Midterm I**{: .label .label-exam }
+
+Fri, Oct 7
+
+Mon, Oct 10
+
+Wed, Oct 12
+: **Lab**{: .label .label-lab } [**Lab 6**](labs/lab6/)
+: **Project**{: .label .label-proj } [**Project 2**](projects/proj3) (due Wed, Oct 26)
+
+Fri, Oct 14
+: **OO Design Practices**  
+
+Mon, Oct 17
+: **Fall break**
+
+Wed, Oct 19
+: **Lab**{: .label .label-lab } [**Lab 7**](labs/lab7/)
