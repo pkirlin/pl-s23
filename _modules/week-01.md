@@ -98,26 +98,52 @@ Wed, Sep 28
 Fri, Sep 30
 : **OO Design Practices**  
   Designing a `Fraction` class.
+:   [**10am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/10am/src/fraction){: .label-button } 
+	[**11am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/11am/src/fraction){: .label-button }
 
 Mon, Oct 3
 : **Review for midterm**
+:   [**10am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/10am/src/midterm1prep){: .label-button } 
+	[**11am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/11am/src/midterm1prep){: .label-button }
 
 Wed, Oct 5
 : **Midterm I**{: .label .label-exam }
 
 Fri, Oct 7
+: **OO Design Practices**  
+  More practice with the `Fraction` class.
+:   [**10am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/10am/src/fraction){: .label-button } 
+	[**11am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/11am/src/fraction){: .label-button }
 
 Mon, Oct 10
+: **ArrayLists, Strings, and File Reading**  
+  [String handout](lectures/arraylists-str/strings-handout.pdf),
+  [ArrayList handout](lectures/arraylists-str/arraylists-handout.pdf),
+  [Practice problems](lectures/arraylists-str/practice.pdf)
+:   [**10am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/10am/src/prebreak/Exercises.java){: .label-button } 
+	[**11am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/11am/src/prebreak/Exercises.java){: .label-button }
 
 Wed, Oct 12
 : **Lab**{: .label .label-lab } [**Lab 6**](labs/lab6/)
-: **Project**{: .label .label-proj } [**Project 2**](projects/proj3) (due Wed, Oct 26)
+: **Project**{: .label .label-proj } [**Project 3**](projects/proj3) (due Wed, Oct 26)
 
 Fri, Oct 14
-: **OO Design Practices**  
+: **ArrayLists, Strings, and File Reading**  
+  Continue practice from Wednesday.
+:   [**10am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/10am/src/prebreak/Exercises.java){: .label-button } 
+	[**11am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/11am/src/prebreak/Exercises.java){: .label-button }
+: **Reading**{: .label .label-reading} Liang 11.11 (ArrayLists), 4.4 and 10.10 (strings).
 
 Mon, Oct 17
 : **Fall break**
 
 Wed, Oct 19
 : **Lab**{: .label .label-lab } [**Lab 7**](labs/lab7/)
+
+Fri, Oct 21
+: **Recursion I**  
+  [Recursion handout](lectures/recursion/recursion-handout.pdf)
+: [**Slides**](lectures/recursion/recursion-1-slides.pdf){: .label-button } 
+	[**10am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/10am/src/recursion/Recursion1.java){: .label-button } 
+	[**11am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/11am/src/recursion/Recursion1.java){: .label-button }
+: **Reading**{: .label .label-reading} Liang 18.1-18.2 (recursion intro).
