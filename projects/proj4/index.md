@@ -36,7 +36,7 @@ Your browser does not support the video tag.
 You can download the starter code for this assignment by creating a new IntelliJ project from version control (VCS) and using the following URL:
 
 ```
-https://github.com/pkirlin/cs142-f21-proj4
+https://github.com/pkirlin/cs142-f22-proj4
 ```
 
 ## Concepts in this program
