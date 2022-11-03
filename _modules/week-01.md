@@ -147,3 +147,63 @@ Fri, Oct 21
 	[**10am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/10am/src/recursion/Recursion1.java){: .label-button } 
 	[**11am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/11am/src/recursion/Recursion1.java){: .label-button }
 : **Reading**{: .label .label-reading} Liang 18.1-18.2 (recursion intro).
+
+Mon, Oct 24
+: TBA
+
+Wed, Oct 26
+: TBA
+
+Fri, Oct 28
+: TBA
+
+Mon, Oct 31
+: TBA
+
+Wed, Nov 2
+: TBA
+
+Fri, Nov 4
+: TBA
+
+Mon, Nov 7
+: TBA
+
+Wed, Nov 9
+: TBA
+
+Fri, Nov 11
+: TBA
+
+Mon, Nov 14
+: TBA
+
+Wed, Nov 16
+: TBA
+
+Fri, Nov 18
+: TBA
+
+Mon, Nov 21
+: TBA
+
+Wed, Nov 23
+: TBA
+
+Fri, Nov 25
+: TBA
+
+Mon, Nov 28
+: TBA
+
+Wed, Nov 30
+: TBA
+
+Fri, Dec 2
+: TBA
+
+Mon, Dec 5
+: TBA
+
+Wed, Dec 7
+: TBA
