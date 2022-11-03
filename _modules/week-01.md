@@ -149,40 +149,63 @@ Fri, Oct 21
 : **Reading**{: .label .label-reading} Liang 18.1-18.2 (recursion intro).
 
 Mon, Oct 24
-: TBA
+: **Recursion II**
+:   [**10pm code**](https://github.com/pkirlin/cs142-f22-inclass/tree/10am/src/recursion/Recursion2.java){: .label-button } 
+	[**11am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/11am/src/recursion/Recursion2.java){: .label-button }
+: **Reading**{: .label .label-reading} Liang 18.3 (recursion continued).  Pay special attention to Figures 18.2 and 18.3 on
+  page 722; these are important to understand.
 
 Wed, Oct 26
-: TBA
+: **Lab**{: .label .label-lab } [**Lab 8**](labs/lab8/)
 
 Fri, Oct 28
-: TBA
+: **Recursion III**  
+  Recursive functions with arrays  
+    [Recursion with arrays handout](lectures/recursion/recursion-with-arrays.pdf)
+: [**Slides**](lectures/recursion/day3-recursion-with-arrays-slides.pdf){: .label-button } 
+	[**10am code**](https://github.com/pkirlin/cs142-f22-inclass/blob/10am/src/recursion/Recursion3.java){: .label-button } 
+	[**11am code**](https://github.com/pkirlin/cs142-f22-inclass/blob/11am/src/recursion/Recursion3.java){: .label-button }
 
 Mon, Oct 31
-: TBA
+: **Recursion IV**  
+  Binary search  
+	[Binary search handout](lectures/recursion/binsearch-handout.pdf)
+: [**Slides**](lectures/recursion/day4-binsearch-slides.pdf){: .label-button } 
+	[**10am code**](https://github.com/pkirlin/cs142-f22-inclass/blob/10am/src/recursion/BinarySearch.java){: .label-button } 
+	[**11am code**](https://github.com/pkirlin/cs142-f22-inclass/blob/11am/src/recursion/BinarySearch.java){: .label-button }
+: **Project**{: .label .label-proj } [**Project 4**](projects/proj4) (due Mon, Nov 14)
 
 Wed, Nov 2
-: TBA
+: **Lab**{: .label .label-lab } [**Lab 9**](labs/lab9/)
+: **Homework**{: .label .label-hw } [**Homework 3**](homework/hw3) (due Thu, Nov 10)
 
 Fri, Nov 4
-: TBA
+: **Inheritance I**  
+  [Inheritance handout](lectures/inheritance/Inheritance-handout.pdf) 
+: [**Slides**](lectures/inheritance/day1-inherit-slides.pdf){: .label-button } 
+	[**10am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/10am/src/inherit1){: .label-button } 
+	[**11am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/11am/src/inherit1){: .label-button }
+: **Reading**{: .label .label-reading} Liang 11.1-11.2 (inheritance). 
+
 
 Mon, Nov 7
-: TBA
+: (Class canceled)
 
 Wed, Nov 9
-: TBA
+: **Inheritance II**
+: **Lab**{: .label .label-lab } [**Lab 10**](labs/lab10/)
 
 Fri, Nov 11
-: TBA
+: **Finish lab 10**
 
 Mon, Nov 14
-: TBA
+: **Polymorphism I**  
 
 Wed, Nov 16
-: TBA
+: **Polymorphism II and Review**  
 
 Fri, Nov 18
-: TBA
+: **Midterm II**{: .label .label-exam }
 
 Mon, Nov 21
 : TBA
