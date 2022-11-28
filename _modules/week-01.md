@@ -214,7 +214,7 @@ Fri, Nov 18
 : **Midterm II**{: .label .label-exam }
 
 Mon, Nov 21
-: **Band in a Box (abstract classes)**
+: **Band in a Box (abstract classes)**  
 	[**10am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/10am/src/bandinabox){: .label-button } 
 	[**11am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/11am/src/bandinabox){: .label-button } 
 
