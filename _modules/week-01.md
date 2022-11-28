@@ -208,6 +208,7 @@ Wed, Nov 16
 : **Polymorphism II (abstract classes) and Review**  
 	[**10am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/10am/src/poly2){: .label-button } 
 	[**11am code**](https://github.com/pkirlin/cs142-f22-inclass/tree/11am/src/poly2){: .label-button }  
+: **Project**{: .label .label-proj } [**Project 5**](projects/proj5) (due Thu, Dec 1)
 
 Fri, Nov 18
 : **Midterm II**{: .label .label-exam }
