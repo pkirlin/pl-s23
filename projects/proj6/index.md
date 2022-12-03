@@ -12,7 +12,7 @@ parent: Projects
 1. TOC
 {:toc}
 
-In this assignment, you will be designing a game of your choice using object-oriented programming techniques learned in class.  
+In this assignment, you will be designing a game of your choice using object-oriented programming techniques learned in class. 
 There are particular requirements for obtaining certain grades on the project, so you can pick what grade you want to aim for.
 
 
