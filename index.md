@@ -24,6 +24,9 @@ seo:
 - [Canvas page](https://rhodes.instructure.com/courses/4029): Use for grades, online assignment submissions, and assignment solutions.
 - [Syllabus](syllabus/syllabus-142-f22.pdf) and [additional policies](syllabus/additional-policies.pdf).
 - Tutoring hours: Sunday through Thursday evenings, 5-11pm, Briggs 001
+- <font color=red>Final exam times:</font>
+  - Friday, December 9, 1-3:30, FJ-B
+  - Monday, Dec 12, 8:30-11:00, Spence Wilson Room (in Briggs)
 
 ## Resources
 - Textbooks and tutorials: *Introduction to Java* by Liang (textbook), 
