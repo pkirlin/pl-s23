@@ -236,6 +236,7 @@ Wed, Nov 30
 Fri, Dec 2
 : **Big Oh**  
   How computer scientists measure how fast algorithms run. 
+: **Project**{: .label .label-proj } [**Project 6**](projects/proj6) (due Wed, Dec 14)
 
 Mon, Dec 5
 : **Big Oh, continued**  
