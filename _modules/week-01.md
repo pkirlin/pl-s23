@@ -231,13 +231,15 @@ Mon, Nov 28
 : **Reading**{: .label .label-reading} Liang 11.5-11.6 (interfaces). 
 
 Wed, Nov 30
-: TBA
+: **Lab**{: .label .label-lab } [**Lab 11**](labs/lab11/)
 
 Fri, Dec 2
-: TBA
+: **Big Oh**  
+  How computer scientists measure how fast algorithms run. 
 
 Mon, Dec 5
-: TBA
+: **Big Oh, continued**  
+  [Big Oh handout](lectures/big-oh/bigoh-handout.pdf) 
 
 Wed, Dec 7
 : TBA
