@@ -1,9 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.8)  6 JAN 2023 17:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.8)  6 JAN 2023 17:44
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**additional-policies.tex
-(./additional-policies.tex
+**syllabus-ml-s23.tex
+(./syllabus-ml-s23.tex
 LaTeX2e <2022-06-01> patch level 5
 L3 programming layer <2022-07-04>
 (/usr/local/texlive/2022/texmf-dist/tex/latex/base/article.cls
@@ -244,8 +245,8 @@ File: l3backend-pdftex.def 2022-07-01 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count282
 \l__pdf_internal_box=\box53
 )
-(./additional-policies.aux)
-\openout1 = `additional-policies.aux'.
+(./syllabus-ml-s23.aux)
+\openout1 = `syllabus-ml-s23.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
@@ -266,34 +267,39 @@ LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 Package hyperref Info: Link coloring OFF on input line 7.
- (./additional-policies.out)
-(./additional-policies.out)
+ (./syllabus-ml-s23.out) (./syllabus-ml-s23.out)
 \@outlinefile=\write3
-\openout3 = `additional-policies.out'.
+\openout3 = `syllabus-ml-s23.out'.
 
- [1
 
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] (./
-additional-policies.aux)
-Package rerunfilecheck Info: File `additional-policies.out' has not changed.
+[1
+
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+[2] [3] [4] (./syllabus-ml-s23.aux)
+Package rerunfilecheck Info: File `syllabus-ml-s23.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 7992 strings out of 478024
- 126582 string characters out of 5838704
- 438333 words of memory out of 5000000
- 26389 multiletter control sequences out of 15000+600000
- 470333 words of font info for 32 fonts, out of 8000000 for 9000
+ 8019 strings out of 478024
+ 126803 string characters out of 5838704
+ 437271 words of memory out of 5000000
+ 26403 multiletter control sequences out of 15000+600000
+ 474492 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,5n,77p,1280b,501s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
-/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></u
-sr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on additional-policies.pdf (2 pages, 67533 bytes).
+ 72i,6n,77p,687b,552s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
+</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
+></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
+usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
+r/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr
+/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/
+local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on syllabus-ml-s23.pdf (4 pages, 117657 bytes).
 PDF statistics:
- 37 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
- 3 named destinations out of 1000 (max. 500000)
+ 66 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
+ 5 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

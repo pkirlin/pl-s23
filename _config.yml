@@ -13,16 +13,16 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: CS 142
-tagline: "Computer Science II: Object-Oriented Programming"
+title: Programming Languages
+tagline: "CS 360: Programming Languages"
 description: Fall 2022
 author: Phil Kirlin
-baseurl: '/cs142-f22' # the subpath of your site, e.g. /blog
+baseurl: '/pl-s23' # the subpath of your site, e.g. /blog
 url: 'https://pkirlin.github.io' # the base hostname & protocol for your site, e.g. http://example.com
-exclude: ["Gemfile", "Gemfile.lock", "LICENSE", "*/LeroyAndTheCookies.md"]
+exclude: ["Gemfile", "Gemfile.lock", "LICENSE"]
 
 # Theme settings
-remote_theme: just-the-docs/just-the-docs@v0.4.0.rc1
+remote_theme: just-the-docs/just-the-docs@v0.4.0.rc4
 color_scheme: light
 search_enabled: true
 heading_anchors: true

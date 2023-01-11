@@ -20,21 +20,11 @@ seo:
 
 ## Administrivia
 - Instructor: Phillip Kirlin
-- Office hours: Mon 12-1, Tue 9-10:30, Wed 3-4, Thu 10-11:30.  Also available by appointment and over Slack.
-- [Canvas page](https://rhodes.instructure.com/courses/4029): Use for grades, online assignment submissions, and assignment solutions.
-- [Syllabus](syllabus/syllabus-142-f22.pdf) and [additional policies](syllabus/additional-policies.pdf).
-- Tutoring hours: Sunday through Thursday evenings, 5-11pm, Briggs 001
-- <font color=red>Final exam times:</font>
-  - Friday, December 9, 1-3:30, FJ-B
-  - Monday, Dec 12, 8:30-11:00, Spence Wilson Room (in Briggs)
+- Office hours: TBA.  Also available by appointment and over Slack.
+- [Canvas page](https://rhodes.instructure.com/courses/4688): Use for grades, online assignment submissions, and assignment solutions.
+- [Syllabus](syllabus/syllabus-pl-s23.pdf) and [additional policies](syllabus/additional-policies.pdf).
 
 ## Resources
-- Textbooks and tutorials: *Introduction to Java* by Liang (textbook), 
-	*Introduction to Programming in Java* by Sedgewick and Wayne (textbook),
-        [official Java tutorials](https://docs.oracle.com/javase/tutorial/), 
-        [Introduction to Programming Using Java](http://math.hws.edu/javanotes/index.html) (free online textbook)
-- Java in the browser: [Repl.it](http://repl.it/new/java), <a href="http://codehs.com">CodeHS</a>
-- <a href="https://docs.oracle.com/en/java/javase/17/docs/api/">Official Java documentation</a>
      
 
 ## Calendar
