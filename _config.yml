@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: CS 360
 tagline: "CS 360: Programming Languages"
-description: Fall 2022
+description: Spring 2023
 author: Phil Kirlin
 baseurl: '/pl-s23' # the subpath of your site, e.g. /blog
 url: 'https://pkirlin.github.io' # the base hostname & protocol for your site, e.g. http://example.com
