@@ -9,6 +9,7 @@ Thu, Jan 12
 	
 Tue, Jan 17
 : **Functions, pairs, lists**
+: [**Code**](lectures/pl-lect2-code.rkt){: .label-button }  
 
 Thu, Jan 19
 : **Lists, box-and-pointer diagrams**
