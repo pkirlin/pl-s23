@@ -1,12 +1,12 @@
 %!PS-Adobe-3.0
-%%Title: pl-lect2-code.rkt
+%%Title: pl-lect3-code.rkt
 %%For: Phillip Kirlin
 %%Creator: a2ps version 4.14
-%%CreationDate: Tue Jan 17 12:23:21 2023
+%%CreationDate: Thu Jan 19 10:56:13 2023
 %%BoundingBox: 24 24 588 768
 %%DocumentData: Clean7Bit
 %%Orientation: Portrait
-%%Pages: 2
+%%Pages: 1
 %%PageOrder: Ascend
 %%DocumentMedia: Letter 612 792 0 () ()
 %%DocumentNeededResources: font Courier
@@ -548,8 +548,8 @@ a2psdict begin
 /#copies 1 def
 /th 20.000000 def
 /fnfs 15 def
-/bfs 11.547912 def
-/cw 6.928747 def
+/bfs 10.000000 def
+/cw 6.000000 def
 
 % Dictionary for ISO-8859-1 support
 /iso1dict 8 dict begin
@@ -571,10 +571,10 @@ currentdict end def
 /fSymbol /Symbol findfont def
 /hm fnfs 0.25 mul def
 /pw
-   cw 81.400000 mul
+   cw 93.400000 mul
 def
 /ph
-   689.410325 th add
+   697.000000 th add
 def
 /pmw 0 def
 /pmh 0 def
@@ -609,117 +609,80 @@ iso1dict begin
 gsave
 llx lly 12 add translate
 /v 0 store
-/x0 x v get 4.850123 add sx cw mul add store
+/x0 x v get 4.200000 add sx cw mul add store
 /y0 y v get bfs th add sub store
 x0 y0 moveto
 (#lang racket) p n
-(; Programming Languages, Lecture 2) N
 () N
-(; Functions and recursion) N
-(\(define \(add1 x\)) N
-(  \(+ 1 x\)\)) N
+(; LECTURE 3) N
 () N
-(\(define \(abs x\)) N
-(  \(if \(< x 0\)) N
-(      \(- x\)) N
-(      x\)\)) N
+(; PRACTICE - Pairs) N
 () N
-(; only correct for y >= 0) N
-(\(define \(pow x y\)) N
-(  \(if \(= y 0\)) N
-(      1) N
-(      \(* x \(pow x \(- y 1\)\)\)\)\)) N
+(\(define u \(cons 2 3\)\)) N
+(\(define w \(cons 5 6\)\)) N
+(\(define x \(cons u w\)\)) N
+(\(define y \(cons w x\)\)) N
+(\(define z \(cons 3 y\)\)) N
 () N
-(\(define \(cube x\)) N
-(  \(pow x 3\)\)) N
-() S 8 T () N
-(\(define sixtyfour \(cube 4\)\)) N
+(; Draw box-and-pointer diagrams for u, w, x, y, z ) N
 () N
-(\(define fortytwo \(+ \(pow 2 4\) \(pow 4 2\) \(cube 2\) 2\)\)) N
+(; Evaluate:) N
+(; [#1]   \(car y\)) N
+(; [#2]   \(car \(car y\)\)) N
+(; [#3]   \(cdr \(car \(cdr \(cdr z\)\)\)\)) N
+(; [#4]   \(+ \(cdr \(car y\)\) \(cdr \(car \(cdr z\)\)\)\)) N
 () N
-(; pairs ) N
-(\(define \(swap pair\)) N
-(  \(cons \(cdr pair\) \(car pair\)\)\)) N
+(; PRACTICE - Lists) N
 () N
-(\(define \(sum-two-pairs pair1 pair2\)) N
-(  \(+ \(car pair1\) \(cdr pair1\) \(car pair2\) \(cdr pair2\)\)\)) N
+(; Draw box-and-pointer diagrams for the following lists:) N
 () N
-(\(define \(div-mod n1 n2\)) N
-(  \(cons \(quotient n1 n2\) \(remainder n1 n2\)\)\)) N
-(; returning more than one value is a pain in Java) N
+(; \(define a '\(1 2 3\)\)) N
+(; \(define b '\(\(1 2\) 3\)\)) N
+(; \(define c '\(\(1 2\) \(3\)\)\)) N
+(; \(define d '\(1 2 '\(\)\)\)) N
 () N
-(\(define \(sort-pair pair\)) N
-(  \(if \(> \(car pair\) \(cdr pair\)\)) N
-(      pair) N
-(      \(swap pair\)\)\)) N
+(; Evaluate:) N
+(; [#1]   \(car a\)) N
+(; [#2]   \(cdr a\)) N
+(; [#3]   \(cdr \(cdr a\)\)) N
+(; [#4]   \(cdr \(cdr \(cdr a\)\)\)) N
 () N
-(; lists) N
+(; [#5]   \(car b\)) N
+(; [#6]   \(cdr b\)) N
 () N
+(; [#7]   \(car c\)) N
+(; [#8]   \(cdr c\)) N
+() N
+(; [#9]   \(cdr \(car \(cdr '\(\(\(1\) 3\) \(4 \(5 6\)\)\)\)\)\)) N
+() N
+(; Evaluate and draw box-and-pointer diagrams:) N
+() N
+(; \(cons '\(\(1 a\) \(2 b\)\) '\(3 c\)\)) N
+() N
+(; \(list '\(\(1 a\) \(2 b\)\) '\(3 c\)\)) N
+() N
+(; \(append '\(\(1 a\) \(2 b\)\) '\(3 c\)\)) N
+() N
+(; LIST FUNCTIONS) N
+() N
+(; process a list:) N
 (\(define \(sum-list lst\)) N
-(  \(if \(null? lst\)) N
-(      0) N
-(      \(+ \(car lst\) \(sum-list \(cdr lst\)\)\)\)\)) N
+() S 8 T (\(if \(null? lst\)) N
+() S 8 T () S 16 T (0) N
+() S 8 T () S 16 T (\(+ \(car lst\) \(sum-list \(cdr lst\)\)\)\)\)) N
 () S 8 T () S 16 T () N
-() N
+(; produce a list:) N
 (\(define \(countdown num\)) N
-(  \(if \(= num 0\)) N
-(      '\(\)) N
-(      \(cons num \(countdown \(- num 1\)\)\)\)\)) N
+() S 8 T (\(if \(= num 0\)) N
+() S 8 T () S 16 T ('\(\)) N
+() S 8 T () S 16 T (\(cons num \(countdown \(- num 1\)\)\)\)\)) N
 () S 8 T () S 16 T () N
 () N
-() N
-() N
-() N
-() N
-(pl-lect2-code.rkt) (Page 1/2) (Jan 17, 23 12:23) title
+(pl-lect3-code.rkt) (Page 1/1) (Jan 19, 23 10:55) title
 border
 grestore
 (Printed by Phillip Kirlin) rhead
-() (1/2) (Tuesday January 17, 2023) footer
-end % of iso1dict
-pagesave restore
-showpage
-%%Page: (2) 2
-%%BeginPageSetup
-/pagesave save def
-%%EndPageSetup
-iso1dict begin
-gsave
-llx lly 12 add translate
-/v 0 store
-/x0 x v get 4.850123 add sx cw mul add store
-/y0 y v get bfs th add sub store
-x0 y0 moveto
-() p n
-(; lists of pairs) N
-() N
-(; the next four functions assume that ) N
-(; the argument lst is a list of pairs of numbers) N
-(\(define \(sum-pair-list lst\)) N
-(  \(if \(null? lst\)) N
-(      0) N
-(      \(+ \(car \(car lst\)\) \(cdr \(car lst\)\) \(sum-pair-list \(cdr lst\)\)\)\)\)) N
-() S 8 T () N
-(\(define \(firsts lst\)) N
-(  \(if \(null? lst\)) N
-(      '\(\)) N
-(      \(cons \(car \(car lst\)\) \(firsts \(cdr lst\)\)\)\)\)) N
-() S 8 T () S 16 T () N
-(\(define \(seconds lst\)) N
-(  \(if \(null? lst\)) N
-(      '\(\)) N
-(      \(cons \(cdr \(car lst\)\) \(seconds \(cdr lst\)\)\)\)\)) N
-() S 8 T () S 16 T () N
-(\(define \(sum-pair-list2 lst\)) N
-(  \(+ \(sum-list \(firsts lst\)\) \(sum-list \(seconds lst\)\)\)\)) N
-() S 8 T () N
-() S 8 T () N
-() N
-(pl-lect2-code.rkt) (Page 2/2) (Jan 17, 23 12:23) title
-border
-grestore
-(Printed by Phillip Kirlin) rhead
-() (Tuesday January 17, 2023) (2/2) footer
+() (1/1) (Thursday January 19, 2023) footer
 end % of iso1dict
 pagesave restore
 showpage
