@@ -18,7 +18,7 @@ Thu, Jan 19
   [**Code**](lectures/pl-lect3-code.rkt){: .label-button }  
 
 Tue, Jan 24
-: **TBA**  
+: **Racket Practice**  
 : [**Slides**](){: .label-button } 
   [**Code**](){: .label-button }  
 
