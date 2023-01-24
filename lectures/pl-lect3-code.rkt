@@ -53,14 +53,14 @@
 
 ; process a list:
 (define (sum-list lst)
-	(if (null? lst)
-		0
-		(+ (car lst) (sum-list (cdr lst)))))
+  (if (null? lst)
+      0
+      (+ (car lst) (sum-list (cdr lst)))))
 		
 ; produce a list:
 (define (countdown num)
-	(if (= num 0)
-		'()
-		(cons num (countdown (- num 1)))))
+  (if (= num 0)
+      '()
+      (cons num (countdown (- num 1)))))
 		
 

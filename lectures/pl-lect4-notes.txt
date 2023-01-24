@@ -1,0 +1,18 @@
+things to write
+
+sum-list-nested
+flatten
+
+get-nth
+
+scale [map]
+
+keep odd numbers [filter]
+
+extract-positions
+merge sort
+
+DEBUGGING:
+(display)
+(newline)
+
