@@ -21,7 +21,7 @@ Tue, Jan 24
 : **Racket Practice**  
 : [**Slides**](lectures/pl-lect4-slides.pdf){: .label-button } 
   [**Starter code**](lectures/pl-lect4-code.rkt){: .label-button }  
-: **Project**{: .label .label-proj } [**Project 1**]() (due Thu, Feb 2)
+: **Project**{: .label .label-proj } [**Project 1**](proj/project1) (due Thu, Feb 2)
  
 Thu, Jan 26
 : **TBA**  
