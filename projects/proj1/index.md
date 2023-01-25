@@ -99,19 +99,21 @@ month that day is in (1 for January, 2 for February, etc.). Use a list holding 1
     
     Examples:  
     
-    `(what-month 1) ==> 1`   ; January 1
-    `(what-month 31) ==> 1`  ; January 31
-    `(what-month 32) ==> 2`  ; February 1
-    `(what-month 138) ==> 5` ; May 18
+    `(what-month 1) ==> 1   ; January 1`  
+    `(what-month 31) ==> 1  ; January 31`  
+    `(what-month 32) ==> 2  ; February 1`  
+    `(what-month 138) ==> 5 ; May 18`  
     
-10.  Write a function  `month-range`  that takes two days of the year  `day1`  and  `day2`  (integers) and returns a list of integers  `(m1  
-m2  …  mn)` where  `m1`  is the month of  day1,  `m2`  is the month of  day1 + 1, ..., and  `mn` is the month of  day2. Note the result will 
+1.  Write a function  `month-range`  that takes two days of the year  `day1`  and  `day2`  (integers) and returns a list of integers  `(m1  
+m2 ... mn)` where  `m1`  is the month of  `day1`,  `m2`  is the month of  day1 + 1, ..., and  `mn` is the month of  day2. Note the result will 
 have length  day2 - day1 + 1  or length 0 if  day1 > day2.
     
     Example:  `(month-range 30 34) ==> '(1 1 2 2 2)`
     
-11.  Write a function  `earliest`  that takes a list of dates and returns the earliest date in the list. The argument list is guaranteed to 
-contain at least one date. Example: `(earliest '((2017 1 2) (2016 2 1) (2019 2 3) (2017 12 1))) ==> '(2016 2 1)`
+1.  Write a function  `earliest`  that takes a list of dates and returns the earliest date in the list. The argument list is guaranteed to 
+contain at least one date. 
+
+    Example: `(earliest '((2017 1 2) (2016 2 1) (2019 2 3) (2017 12 1))) ==> '(2016 2 1)`
 
 ## Grading
 
