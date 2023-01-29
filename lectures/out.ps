@@ -1,12 +1,12 @@
 %!PS-Adobe-3.0
-%%Title: pl-lect3-code.rkt
+%%Title: pl-lect5-code.rkt
 %%For: Phillip Kirlin
 %%Creator: a2ps version 4.14
-%%CreationDate: Thu Jan 19 10:56:13 2023
+%%CreationDate: Thu Jan 26 13:12:36 2023
 %%BoundingBox: 24 24 588 768
 %%DocumentData: Clean7Bit
 %%Orientation: Portrait
-%%Pages: 1
+%%Pages: 2
 %%PageOrder: Ascend
 %%DocumentMedia: Letter 612 792 0 () ()
 %%DocumentNeededResources: font Courier
@@ -548,8 +548,8 @@ a2psdict begin
 /#copies 1 def
 /th 20.000000 def
 /fnfs 15 def
-/bfs 10.000000 def
-/cw 6.000000 def
+/bfs 11.547912 def
+/cw 6.928747 def
 
 % Dictionary for ISO-8859-1 support
 /iso1dict 8 dict begin
@@ -571,10 +571,10 @@ currentdict end def
 /fSymbol /Symbol findfont def
 /hm fnfs 0.25 mul def
 /pw
-   cw 93.400000 mul
+   cw 81.400000 mul
 def
 /ph
-   697.000000 th add
+   689.410325 th add
 def
 /pmw 0 def
 /pmh 0 def
@@ -609,80 +609,145 @@ iso1dict begin
 gsave
 llx lly 12 add translate
 /v 0 store
-/x0 x v get 4.200000 add sx cw mul add store
+/x0 x v get 4.850123 add sx cw mul add store
 /y0 y v get bfs th add sub store
 x0 y0 moveto
 (#lang racket) p n
+(\(let \(\(a 1\) \(b 2\)\)) N
+(  \(+ a b\)\)) N
+(;  ==> 3) N
 () N
-(; LECTURE 3) N
+(\(define a 10\)) N
+(\(define c 30\)) N
+(\(let \(\(a 1\) \(b 2\)\)) N
+(  \(+ a b c\)\)) N
+(;  ==> 33) N
 () N
-(; PRACTICE - Pairs) N
+(\(define \(silly1 z\)) N
+(  \(let \(\(x 5\)\)) N
+(    \(+ x z\)\)\)) N
 () N
-(\(define u \(cons 2 3\)\)) N
-(\(define w \(cons 5 6\)\)) N
-(\(define x \(cons u w\)\)) N
-(\(define y \(cons w x\)\)) N
-(\(define z \(cons 3 y\)\)) N
-() N
-(; Draw box-and-pointer diagrams for u, w, x, y, z ) N
-() N
-(; Evaluate:) N
-(; [#1]   \(car y\)) N
-(; [#2]   \(car \(car y\)\)) N
-(; [#3]   \(cdr \(car \(cdr \(cdr z\)\)\)\)) N
-(; [#4]   \(+ \(cdr \(car y\)\) \(cdr \(car \(cdr z\)\)\)\)) N
-() N
-(; PRACTICE - Lists) N
-() N
-(; Draw box-and-pointer diagrams for the following lists:) N
-() N
-(; \(define a '\(1 2 3\)\)) N
-(; \(define b '\(\(1 2\) 3\)\)) N
-(; \(define c '\(\(1 2\) \(3\)\)\)) N
-(; \(define d '\(1 2 '\(\)\)\)) N
-() N
-(; Evaluate:) N
-(; [#1]   \(car a\)) N
-(; [#2]   \(cdr a\)) N
-(; [#3]   \(cdr \(cdr a\)\)) N
-(; [#4]   \(cdr \(cdr \(cdr a\)\)\)) N
-() N
-(; [#5]   \(car b\)) N
-(; [#6]   \(cdr b\)) N
-() N
-(; [#7]   \(car c\)) N
-(; [#8]   \(cdr c\)) N
-() N
-(; [#9]   \(cdr \(car \(cdr '\(\(\(1\) 3\) \(4 \(5 6\)\)\)\)\)\)) N
-() N
-(; Evaluate and draw box-and-pointer diagrams:) N
-() N
-(; \(cons '\(\(1 a\) \(2 b\)\) '\(3 c\)\)) N
-() N
-(; \(list '\(\(1 a\) \(2 b\)\) '\(3 c\)\)) N
-() N
-(; \(append '\(\(1 a\) \(2 b\)\) '\(3 c\)\)) N
-() N
-(; LIST FUNCTIONS) N
-() N
-(; process a list:) N
-(\(define \(sum-list lst\)) N
-() S 8 T (\(if \(null? lst\)) N
-() S 8 T () S 16 T (0) N
-() S 8 T () S 16 T (\(+ \(car lst\) \(sum-list \(cdr lst\)\)\)\)\)) N
+(; this one won't work!) N
+(\(define \(silly2 z\)) N
+(  \(let \(\(x 5\) \(answer \(+ x z\)\)\)) N
+(    answer\)\)) N
 () S 8 T () S 16 T () N
-(; produce a list:) N
-(\(define \(countdown num\)) N
-() S 8 T (\(if \(= num 0\)) N
-() S 8 T () S 16 T ('\(\)) N
-() S 8 T () S 16 T (\(cons num \(countdown \(- num 1\)\)\)\)\)) N
-() S 8 T () S 16 T () N
+(\(define \(silly2-fixed z\)) N
+(  \(let* \(\(x 5\) \(answer \(+ x z\)\)\)) N
+(    answer\)\) ) N
 () N
-(pl-lect3-code.rkt) (Page 1/1) (Jan 19, 23 10:55) title
+(\(define \(silly3 z\)) N
+(  \(let* \(\(x \(if \(> z 0\) z 4\)\) \(y \(+ x 1\)\)\)) N
+(    \(if \(> x y\) \(* 2 x\) \(* y y\)\)\)\)) N
+() S 8 T () S 16 T () N
+(\(define \(silly4\)) N
+(  \(let \(\(x 1\)\)) N
+(    \(+ ) S 8 T () N
+(     \(let \(\(x 2\)\) \(+ x 1\)\)) N
+(     \(let \(\(y \(+ x 2\)\)\) \(+ y 1\)\)\)\)\)) N
+() N
+(; Notice that the inner function define IS nested inside the outer define, but) N
+(; the body of the outer function \(count-up 1 x\) is NOT nested inside the inner d) N
+(efine.) N
+(; This is contrary to let/let*/letrec, where the body of the function is nested) N
+(; inside the let/let*/letrec.) N
+(\(define \(count-up-from-one-nested-define end\)) N
+(  \(define \(count-up start end\)) N
+(    \(if \(= start end\)) N
+(        \(cons start '\(\)\)) N
+(        \(cons start \(count-up \(+ 1 start\) end\)\)\)\)) N
+(  \(count-up 1 end\)\)) N
+() S 8 T () S 16 T () N
+(\(define \(count-up-from-one-better end\)) N
+(  \(define \(count-up start\)) N
+(    \(if \(= start end\)) N
+(        \(cons start '\(\)\)) N
+(        \(cons start \(count-up \(+ 1 end\)\)\)\)\)) N
+(  \(count-up 1\)\)) N
+() N
+() N
+() N
+() N
+() N
+() N
+() N
+(pl-lect5-code.rkt) (Page 1/2) (Jan 26, 23 13:12) title
 border
 grestore
 (Printed by Phillip Kirlin) rhead
-() (1/1) (Thursday January 19, 2023) footer
+() (1/2) (Thursday January 26, 2023) footer
+end % of iso1dict
+pagesave restore
+showpage
+%%Page: (2) 2
+%%BeginPageSetup
+/pagesave save def
+%%EndPageSetup
+iso1dict begin
+gsave
+llx lly 12 add translate
+/v 0 store
+/x0 x v get 4.850123 add sx cw mul add store
+/y0 y v get bfs th add sub store
+x0 y0 moveto
+() p n
+() N
+(; max and repeated computation) N
+() N
+(\(define \(bad-max lst\)) N
+(  \(cond ) N
+(    \(\(null? \(cdr lst\)\)) N
+(     \(car lst\)\)) N
+(    \(\(> \(car lst\) \(bad-max \(cdr lst\)\)\)) N
+(     \(car lst\)\)) N
+(    \(#t) N
+(     \(bad-max \(cdr lst\)\)\)\)\)) N
+() N
+(\(define \(good-max lst\)) N
+(  \(cond) N
+(    \(\(null? \(cdr lst\)\)) N
+(     \(car lst\)\)) N
+(    \(#t) N
+(     \(let \(\(max-of-cdr \(good-max \(cdr lst\)\)\)\)) N
+(       \(if \(> \(car lst\) max-of-cdr\)) N
+(           \(car lst\)) N
+(           max-of-cdr\)\)\)\)\)) N
+(                                     ) N
+(; mutation) N
+() N
+(; Recall that sort-pair takes a pair and returns) N
+(; an equivalent pair so that car > cdr.) N
+() N
+(\(define \(sort-pair pair\)) N
+(  \(if \(> \(car pair\) \(cdr pair\)\)) N
+(      pair) N
+(      \(cons \(cdr pair\) \(car pair\)\)\)\)) N
+() N
+(\(define x '\(4 . 3\)\)) N
+(\(define y \(sort-pair x\)\)) N
+(; Somehow mutate \(car x\) to hold 5) N
+(\(define z \(car y\)\)) N
+() N
+(\(define \(sort-pair-alt pair\)) N
+(  \(if \(> \(car pair\) \(cdr pair\)\)) N
+(      \(cons \(car pair\) \(cdr pair\)\)) N
+(      \(cons \(cdr pair\) \(car pair\)\)\)\)) N
+() S 8 T () S 16 T () N
+(\(define \(my-append lst1 lst2\)) N
+(  \(if \(null? lst1\)) N
+(      lst2) N
+(      \(cons \(car lst1\) \(append \(cdr lst1\) lst2\)\)\)\)) N
+() N
+(\(define lst1 '\(2 4\)\)) N
+(\(define lst2 '\(5 3 0\)\)) N
+(\(define lst3 \(append lst1 lst2\)\)) N
+() N
+() N
+(pl-lect5-code.rkt) (Page 2/2) (Jan 26, 23 13:12) title
+border
+grestore
+(Printed by Phillip Kirlin) rhead
+() (Thursday January 26, 2023) (2/2) footer
 end % of iso1dict
 pagesave restore
 showpage
