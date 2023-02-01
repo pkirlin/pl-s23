@@ -25,10 +25,13 @@ Tue, Jan 24
  
 Thu, Jan 26
 : **TBA**  
-: [**Slides**](){: .label-button } 
-  [**Code**](){: .label-button }  
+: [**Slides**](lectures/pl-lect5-slides.pdf){: .label-button }
+  [**Code**](lectures/pl-lect5-code.rkt){: .label-button }  
   
 Tue, Jan 31
+: **Class canceled, ice**
+  
+Thu, Feb 2
 : **TBA**  
 : [**Slides**](){: .label-button } 
-  [**Code**](){: .label-button }  
+  [**Code**](){: .label-button } 
