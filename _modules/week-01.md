@@ -30,8 +30,24 @@ Thu, Jan 26
   
 Tue, Jan 31
 : **Class canceled, ice**
-  
+
 Thu, Feb 2
+: **Class canceled, ice**
+  
+Tue, Feb 7
 : **TBA**  
-: [**Slides**](){: .label-button } 
+: [**Slides**](lectures/pl-lect6-slides.pdf){: .label-button }
+  [**Code**](lectures/pl-lect6-code-handout.rkt){: .label-button } 
+  
+Thu, Feb 9
+: **TBA**  
+: [**Slides**](lectures/pl-lect7-slides.pdf){: .label-button }
+  [**Code**](lectures/pl-lect7-code-start.rkt){: .label-button } 
+  
+: **TBA**  
+: [**Slides**](){: .label-button }
+  [**Code**](){: .label-button } 
+  
+: **TBA**  
+: [**Slides**](){: .label-button }
   [**Code**](){: .label-button } 
