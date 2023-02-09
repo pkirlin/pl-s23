@@ -18,13 +18,13 @@ Thu, Jan 19
   [**Code**](lectures/pl-lect3-code.rkt){: .label-button }  
 
 Tue, Jan 24
-: **Racket Practice**  
+: **Racket practice**  
 : [**Slides**](lectures/pl-lect4-slides.pdf){: .label-button } 
   [**Starter code**](lectures/pl-lect4-code.rkt){: .label-button }  
 : **Project**{: .label .label-proj } [**Project 1**](projects/proj1) (due Thu, Feb 2)
  
 Thu, Jan 26
-: **TBA**  
+: **Local bindings**  
 : [**Slides**](lectures/pl-lect5-slides.pdf){: .label-button }
   [**Code**](lectures/pl-lect5-code.rkt){: .label-button }  
   
@@ -35,19 +35,21 @@ Thu, Feb 2
 : **Class canceled, ice**
   
 Tue, Feb 7
-: **TBA**  
+: **Tail recursion**  
 : [**Slides**](lectures/pl-lect6-slides.pdf){: .label-button }
   [**Code**](lectures/pl-lect6-code-handout.rkt){: .label-button } 
   
 Thu, Feb 9
-: **TBA**  
+: **First class functions I**  
 : [**Slides**](lectures/pl-lect7-slides.pdf){: .label-button }
   [**Code**](lectures/pl-lect7-code-start.rkt){: .label-button } 
   
-: **TBA**  
+Thu, Feb 14
+: **First class functions II**  
 : [**Slides**](){: .label-button }
   [**Code**](){: .label-button } 
   
-: **TBA**  
+Thu, Feb 16
+: **Practice**  
 : [**Slides**](){: .label-button }
   [**Code**](){: .label-button } 
