@@ -44,7 +44,7 @@ Thu, Feb 9
 : [**Slides**](lectures/pl-lect7-slides.pdf){: .label-button }
   [**Code**](lectures/pl-lect7-code-start.rkt){: .label-button } 
   
-Thu, Feb 14
+Tue, Feb 14
 : **First class functions II**  
 : [**Slides**](){: .label-button }
   [**Code**](){: .label-button } 

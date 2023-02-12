@@ -87,3 +87,17 @@ def reverse(lst):
     lst = lst[1:]
   return acc		
 |#
+
+(define (sum-tr lst)
+  (define (sum-tr-helper lst total)
+    (if (null? lst) total
+        (sum-tr-helper (cdr lst) (+ total (car lst)))))
+  (sum-tr-helper lst 0))
+
+(define (max-tr lst)
+  (define (max-tr-helper lst maxSoFar)
+    (if (null? lst) maxSoFar
+        (if (> (car lst) maxSoFar)
+            (max-tr-helper (cdr lst) (car lst))
+            (max-tr-helper (cdr lst) maxSoFar))))
+  (max-tr-helper (cdr lst) (car lst)))
