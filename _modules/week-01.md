@@ -46,8 +46,8 @@ Thu, Feb 9
   
 Tue, Feb 14
 : **First class functions II**  
-: [**Slides**](){: .label-button }
-  [**Code**](){: .label-button } 
+: [**Slides**](lectures/pl-lect8-slides.pdf){: .label-button }
+  [**Code**](lectures/pl-lect8-code.rkt){: .label-button } 
   
 Thu, Feb 16
 : **Practice**  

@@ -1,8 +1,8 @@
 %!PS-Adobe-3.0
-%%Title: pl-lect7-code-start.rkt
+%%Title: pl-lect8-code.rkt
 %%For: Phillip Kirlin
 %%Creator: a2ps version 4.14
-%%CreationDate: Thu Feb  9 12:25:28 2023
+%%CreationDate: Tue Feb 14 12:22:46 2023
 %%BoundingBox: 24 24 588 768
 %%DocumentData: Clean7Bit
 %%Orientation: Portrait
@@ -548,8 +548,8 @@ a2psdict begin
 /#copies 1 def
 /th 20.000000 def
 /fnfs 15 def
-/bfs 11.547912 def
-/cw 6.928747 def
+/bfs 10.000000 def
+/cw 6.000000 def
 
 % Dictionary for ISO-8859-1 support
 /iso1dict 8 dict begin
@@ -571,10 +571,10 @@ currentdict end def
 /fSymbol /Symbol findfont def
 /hm fnfs 0.25 mul def
 /pw
-   cw 81.400000 mul
+   cw 93.400000 mul
 def
 /ph
-   689.410325 th add
+   697.000000 th add
 def
 /pmw 0 def
 /pmh 0 def
@@ -609,73 +609,83 @@ iso1dict begin
 gsave
 llx lly 12 add translate
 /v 0 store
-/x0 x v get 4.850123 add sx cw mul add store
+/x0 x v get 4.200000 add sx cw mul add store
 /y0 y v get bfs th add sub store
 x0 y0 moveto
-(#lang racket) p n
-(; Programming Languages) N
-(; Lecture on First Class Functions) N
-() N
-(\(define \(sum a b\)) N
-(  \(if \(> a b\) 0) N
-(      \(+ a \(sum \(+ a 1\) b\)\)\)\)) N
-() N
-(\(define \(sum-squares a b\)) N
-(  \(if \(> a b\) 0) N
-(      \(+ \(expt a 2\) \(sum-squares \(+ a 1\) b\)\)\)\)) N
-() N
-(\(define \(sum-abs a b\)) N
-(  \(if \(> a b\) 0) N
-(      \(+ \(abs a\) ) N
-(         \(sum-abs \(+ a 1\) b\)\)\)\)) N
-() N
-(; Abstract away the thing you do before summing; result) N
-(; is this function:) N
-(\(define \(sum-any func a b\)) N
-(  \(if \(> a b\)) N
-(      0) N
-(      \(+ \(func a\)) N
-(         \(sum-any func \(+ a 1\) b\)\)\)\)) N
-() N
-(\(define \(silly-function x\) \(/ \(* x x\) 2\)\)) N
-(\(sum-any silly-function 1 10\) ) N
-() N
-(; Better to use an anonymous function, because we'll ) N
-(; probably never need the silly function again:) N
-(\(sum-any \(lambda \(x\) \(/ \(* x x\) 2\)\) 1 10\)) N
-() N
-(\(define \(do-n-times func n x\)) N
-(  \(if \(= n 0\) x \(do-n-times func \(- n 1\) \(func x\)\)\)\)) N
-() N
-(\(define \(get-nth lst n\) \(car \(do-n-times cdr n lst\)\)\)) N
-() N
-(; raise x to the y power) N
-(\(define \(power x y\)) N
-(  \(do-n-times \(lambda \(a\) \(* x a\)\) y 1\)\) ) N
-() N
-(\(define \(mystery lst\)) N
+(\(define \(map func lst\)) p n
 (  \(if \(null? lst\) '\(\)) N
-(      \(cons \(car lst\) \(mystery \(cdr lst\)\)\)\)\)) N
+(    \(cons \(func \(car lst\)\) \(map func \(cdr lst\)\)\)\)\)) N
+(    ) N
+(\(define \(double x\) \(* x 2\)\)) N
+(\(map double '\(1 2 3\)\) => '\(2 4 6\)) N
 () N
-(\(define \(map func lst\)) N
-(  \(if \(null? lst\) '\(\)) N
-(      \(cons \(func \(car lst\)\) \(map func \(cdr lst\)\)\)\)\)) N
+(\(map \(lambda \(x\) \(* x 2\)\) '\(1 2 3\)\) => '\(2 4 6\)) N
+() N
+(\(map car '\(\(1 2 3\) \(4 5\) \(6\) \(7 8 9\)\)\) => '\(1 4 6 7\)) N
+() N
+(\(define \(scale factor lst\)) N
+(  \(map \(lambda \(x\) \(* x factor\)\) lst\)) N
+(    ) N
+(\(scale 2 '\(1 2 3\)\) => '\(2 4 6\)) N
+() N
+(\(map \(lambda \(x\) \(+ x 1\)\) '\(1 2 3\)\) => ?) N
+() N
+(\(map \(lambda \(x\) \(cons x '\(\)\) '\(1 2 3\)\) => ?) N
+() N
+(\(map \(lambda \(x\) \(list x\)\) '\(1 2 3\)\) => ?) N
+() N
+(\(map \(lambda \(x\)) N
+(  \(if \(> x 0\) \(* x 2\) \(* x 3\)\)\) '\(1 -2 -3 4\)\)) N
 () N
 (\(define \(filter func lst\)) N
-(  \(cond \(\(null? lst\) '\(\)\)) N
-(        \(\(func \(car lst\)\) \(cons \(car lst\) \(filter func \(cdr lst\)\)\)\)) N
-(        \(#t \(filter func \(cdr lst\)\)\)\)\)) N
+(  \(cond \(\(null? lst\) '\(\)) N
+(    \(\(func lst\) \(cons \(func \(car lst\)\) \(filter func \(cdr lst\)\)\)\)) N
+(    \(#t \(filter func \(cdr lst\)\)\)\)\)) N
+(    ) N
+(\(filter odd? '\(1 2 3\)\) => '\(1 3\)) N
 () N
-(#|) N
-(Write a function called scale that takes a list of numbers and a number, ) N
-(  and returns a new list with all the numbers scaled by the number supplied.) N
-() S 8 T (Hint: use map and an anonymous function.) N
+(\(define \(keep-odds lst\) \(filter odd? lst\)) N
+() N
+(\(filter \(lambda \(x\) \(> x 0\)\) '\(-1 2 -3 4\)\) => '\(2 4\)) N
+() N
+(\(filter \(lambda \(x\) \(= 1 \(remainder x 2\)\)\) '\(1 2 3\)\) => ?) N
+() N
+(\(define \(keep-divisible factor lst\)) N
+(  \(filter ______ lst\)\)) N
+(  ) N
+(\(filter \(lambda \(lst\) \(even? \(car lst\)\)\)) N
+(           '\(\(1 2 3\) \(4 5\) \(6 7\)\)\) => ?) N
+() N
+(\(filter \(lambda \(lst\) \(even? \(car lst\)\)\)) N
+(           '\(\(1 2 3\) \(4 5\) \(6 7\) \(\)\)\) => ?) N
+() N
+(\(define \(keep-longer-than n lst\)) N
+(  \(filter ______ lst\)\)) N
+() N
+() N
+() N
+(\(define \(square x\) \(expt x 2\)\)) N
+(\(define \(cube x\) \(expt x 3\)\)) N
+() N
+(; a function that returns a function) N
+(\(define \(to-the-power exponent\)) N
+() S 8 T (\(lambda \(x\) \(expt x exponent\)\)\)) N
 () S 8 T () N
-(pl-lect7-code-start.rkt) (Page 1/3) (Sep 21, 17 13:11) title
+(; how to use this new function:) N
+(\(define square-new \(to-the-power 2\)\)) N
+(\(define cube-new \(to-the-power 3\)\)) N
+() N
+(; another example) N
+(; first, the old way:) N
+(\(define \(add3 num\) \(+ 3 num\)\)) N
+(\(define \(add17 num\) \(+ 17 num\)\)) N
+(; and the new way:) N
+(\(define \(create-add-function inc\)) N
+(pl-lect8-code.rkt) (Page 1/3) (Sep 21, 17 13:05) title
 border
 grestore
 (Printed by Phillip Kirlin) rhead
-() (1/3) (Thursday February 09, 2023) footer
+() (1/3) (Tuesday February 14, 2023) footer
 end % of iso1dict
 pagesave restore
 showpage
@@ -687,73 +697,83 @@ iso1dict begin
 gsave
 llx lly 12 add translate
 /v 0 store
-/x0 x v get 4.850123 add sx cw mul add store
+/x0 x v get 4.200000 add sx cw mul add store
 /y0 y v get bfs th add sub store
 x0 y0 moveto
-() p 8 T (Ex: \(scale '\(1 2 3\) 2\) ==> '\(2 4 6\)) N
+(  \(lambda \(num\) \(+ inc num\)\)\)) p n
+(\(define add3-new \(create-add-function 3\)\)) N
+(\(define add17-new \(create-add-function 17\)\)) N
+() N
+(; a function that takes two functions and returns a function) N
+(\(define \(compose f g\)) N
+(  \(lambda \(x\) \(f \(g x\)\)\)\)) N
+(\(define second \(compose car cdr\)\)) N
+(\(define third \(compose car \(compose cdr cdr\)\)\)) N
+(;\(map third '\(\(2013 5 6\) \(2012 1 8\) \(2000 7 7\)\)\)) N
+() N
+(; a function that takes a function and returns a "safe" version of the same function) N
+(\(define \(make-safe func\)) N
+(  \(lambda \(lst\)) N
+(    \(if \(or \(not \(list? lst\)\)) N
+(            \(null? lst\)\)) N
+(        "No can do!") N
+(        \(func lst\)\)\)\)) N
+() N
+(\(define \(divisible n\)) N
+() S 8 T (\(lambda \(x\) \(= 0 \(remainder x n\)\)\)\)) N
+() N
+(\(define \(make-quad-polynomial a b c\)) N
+(   \(lambda \(x\) \(+ \(* a x x\) \(* b x\) c\)\)\)) N
+(   ) N
+(; Building to foldr) N
+(; these three functions are all similar) N
+(\(define \(length lst\)) N
+(  \(if \(null? lst\) 0) N
+(    \(+ 1 \(length \(cdr lst\)\)\)\)\)) N
+() N
+(\(define \(sum-list lst\)) N
+(  \(if \(null? lst\) 0) N
+(    \(+ \(car lst\) \(sum-list \(cdr lst\)\)\)\)\)) N
+() N
+(;\(define \(map func lst\)) N
+(;  \(if \(null? lst\) '\(\)) N
+(;    \(cons \(func \(car lst\)\) \(map func \(cdr lst\)\)\)\)\)) N
+() N
+(; resulting in foldr!) N
+(\(define \(foldr combine base lst\)) N
+(  \(if \(null? lst\) base) N
+(    \(combine \(car lst\) \(foldr combine base \(cdr lst\)\)\)\)\)) N
+(    ) N
+(\(define \(sum-list-new lst\)) N
+() S 8 T (\(foldr + 0 lst\)\)) N
 () S 8 T () N
-(Write a function called keep-odds that takes a list of numbers and returns a new) N
-( list ) N
-(  with all only the numbers that are odd retained.) N
-() S 8 T () N
-() S 8 T (Hint: There's a built-in function \(odd? p\) that returns #t if p is odd. ) N
-( Use filter) N
-() S 8 T (and odd?.) N
-() S 8 T () N
-() S 8 T (Ex: \(keep-odds '\(1 2 3\)\) ==> '\(1 3\)) N
-() S 8 T () N
-(Write a function called keep-greater-than that takes a number x and an addition ) N
-(list of) N
-(        numbers.  This function returns a new list only the numbers that greater) N
-( than x ) N
-() S 8 T (retained.) N
-() S 8 T () N
-() S 8 T (Ex: \(keep-greater-than 3 '\(3 5 2 7 4\)\) ==> '\(5 7 4\)) N
-() S 8 T () N
-(Write a higher-order function called find that takes a function and a list.) N
-(  The function argument must be a function of a single value and return #t or #f) N
-( \(aka) N
-(  a predicate\).  Find should return the first element in the list that satisfies) N
-(  the predicate \(makes the function return true\).) N
+(\(define \(length-new lst\)) N
+(  \(foldr \(lambda \(elt cdr-len\) \(+ 1 cdr-len\)\) 0 lst\)\)) N
 (  ) N
-(  Do not use filter for this, even though it would be very simple.  \(That algori) N
-(thm ) N
-(  would be rather inefficient if the list were very long but the first item in t) N
-(he list ) N
-(  satisfied the predicate, because filter would still have to filter all the rem) N
-(aining ) N
-(  elements.\)) N
+(\(define \(my-map func lst\)) N
+(  \(foldr \(lambda \(car cdr\) \(cons \(func car\) cdr\)\) '\(\) lst\)\)) N
 (  ) N
-(  Ex: \(find odd? '\(2 4 3 5\)\) ==> 3) N
-(  Ex: \(find \(lambda \(x\) \(< x 0\)\) '\(3 2 1 0 -1 -2\)\) ==> -1) N
-(  Ex: \(find \(lambda \(lst\) \(even? \(car lst\)\)\) '\(\(1 2 3\) \(4 5 6\) \(7 8 9\)\)\) ==> '\(4) N
-( 5 6\)) N
-(  ) N
-(Write a higher-order function called greatest that takes a predicate and a list.) N
-(  The ) N
-(  predicate must be a comparison predicate of two arguments \(e.g., < or >\).  gre) N
-(atest ) N
-(  returns the element in the list that the comparison operator says is #t for al) N
-(l the ) N
-(  elements in the list when compared against each other.) N
-(  ) N
-(  Ex: \(greatest > '\(1 3 2 4 6 5\)\) ==> 6) N
-(  Ex: \(greatest < '\(1 3 2 4 6 5\)\) ==> 1) N
-(  Ex: \(greatest before? '\(\(2012 4 2\) \(2012 1 3\) \(2012 10 10\)\)\) ==> '\(2012 1 3\)) N
-(  ) N
-(Write a higher-order function called count that takes a predicate and a list, an) N
-(d returns) N
-() S 8 T (the number of items in the list that satisfy the predicate.) N
-() S 8 T () N
-() S 8 T (Write this in two ways: first using filter, then again not using filter.) N
-() S 8 T () N
-(Write two higher-order predicate functions called any and all.  Each takes a pre) N
-(dicate ) N
-(pl-lect7-code-start.rkt) (Page 2/3) (Sep 21, 17 13:11) title
+() N
+(#|) N
+(- Write a function make-gt which takes a number n and returns a function of a single) N
+(argument x that evalutes to #t if n > x.) N
+() N
+(  Ex: \(define gt5 \(make-gt 5\)\)) N
+(      \(filter gt5 '\(2 4 6 8\)\) ==> '\(6 8\)) N
+(      ) N
+(- Write a function called make-polynomial that takes a list of coefficients and returns) N
+(a function that represents the equivalent polynomial.) N
+(  Ex: \(make-polynomial '\(2 1\)\) returns the polynomial 2x + 1, or rather it) N
+(          returns the function \(lambda \(x\) \(+ \(* 2 x\) 1\)\)) N
+(          ) N
+(  Ex: \(make-polynomial '\(2 4 -8\)\) returns the polynomial 2x^2 + 4x - 8) N
+(    This should work for a list of any length.  A polynomial for a list of length) N
+(    zero is the zero polynomial f\(x\) = 0.) N
+(pl-lect8-code.rkt) (Page 2/3) (Sep 21, 17 13:05) title
 border
 grestore
 (Printed by Phillip Kirlin) rhead
-() (Thursday February 09, 2023) (2/3) footer
+() (Tuesday February 14, 2023) (2/3) footer
 end % of iso1dict
 pagesave restore
 showpage
@@ -765,28 +785,23 @@ iso1dict begin
 gsave
 llx lly 12 add translate
 /v 0 store
-/x0 x v get 4.850123 add sx cw mul add store
+/x0 x v get 4.200000 add sx cw mul add store
 /y0 y v get bfs th add sub store
 x0 y0 moveto
-(  and a list as arguments.  Any returns #t if any of the items in the list satis) p n
-(fy the ) N
-(  predicate.  All returns #t if all the elements satisfy the predicate.) N
+(      ) p n
+(  You should be able to do something like) N
+(  \(map \(make-polynomial '\(2 1\)\) '\(1 2 3\)\) ==> '\(3 5 7\)) N
+(      ) N
+(- Write filter and count \(from the previous lecture\) in terms of foldr.) N
 () N
-(  Ex: \(any odd? '\(1 2 3 4\)\) ==> #t) N
-(  Ex: \(any odd? '\(2 4 6 8\)\) ==> #f) N
-(  Ex: \(all even? '\(2 4 6 8\)\) ==> #t) N
-(  Ex: \(all even? '\(1 2 3 4\)\) ==> #f) N
-(  ) N
-(  Write these first from scratch without using filter.  Then write them by using) N
-( filter.) N
-(  Then write them using count.  Which way\(s\) are more efficient \(in terms of tim) N
-(e\) than others?) N
+(- Write max in terms of foldr.  You may assume all the numbers you will be comparing) N
+(are positive.) N
 (|#) S
-(pl-lect7-code-start.rkt) (Page 3/3) (Sep 21, 17 13:11) title
+(pl-lect8-code.rkt) (Page 3/3) (Sep 21, 17 13:05) title
 border
 grestore
 (Printed by Phillip Kirlin) rhead
-() (3/3) (Thursday February 09, 2023) footer
+() (3/3) (Tuesday February 14, 2023) footer
 end % of iso1dict
 pagesave restore
 showpage
