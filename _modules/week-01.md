@@ -51,5 +51,13 @@ Tue, Feb 14
   
 Thu, Feb 16
 : **Practice**  
+  [**Problems**](lectures/pl-lect8-code.rkt){: .label-button } 
+  
+Tue, Feb 21
+: **More practice and `foldr`**  
+: [**Slides**](lectures/pl-lect10-slides.pdf){: .label-button }
+  
+Thu, Feb 23
+: **Practice**  
 : [**Slides**](){: .label-button }
   [**Code**](){: .label-button } 
