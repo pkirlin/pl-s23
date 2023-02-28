@@ -58,6 +58,16 @@ Tue, Feb 21
 : [**Slides**](lectures/pl-lect10-slides.pdf){: .label-button }
   
 Thu, Feb 23
-: **Practice**  
+: **Lexical scope I**  
+: [**Slides**](lectures/pl-lect11-slides.pdf){: .label-button }
+  [**Code**](lectures/pl-lect11-code.rkt){: .label-button } 
+  
+Thu, Feb 23
+: **Lexical scope II**  
+: [**Slides**](lectures/pl-lect12-slides.pdf){: .label-button }
+  [**Code**](lectures/pl-lect12-code.rkt){: .label-button } 
+  
+Thu, Feb 23
+: **Function closure idioms**  
 : [**Slides**](){: .label-button }
   [**Code**](){: .label-button } 
