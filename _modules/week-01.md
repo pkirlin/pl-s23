@@ -52,6 +52,7 @@ Tue, Feb 14
 Thu, Feb 16
 : **Practice**  
   [**Problems**](lectures/pl-lect8-code.rkt){: .label-button } 
+: **Project**{: .label .label-proj } [**Project 2**](projects/proj2) (due Thu, Mar 1)
   
 Tue, Feb 21
 : **More practice and `foldr`**  
@@ -62,12 +63,12 @@ Thu, Feb 23
 : [**Slides**](lectures/pl-lect11-slides.pdf){: .label-button }
   [**Code**](lectures/pl-lect11-code.rkt){: .label-button } 
   
-Thu, Feb 23
+Tue, Feb 28
 : **Lexical scope II**  
 : [**Slides**](lectures/pl-lect12-slides.pdf){: .label-button }
   [**Code**](lectures/pl-lect12-code.rkt){: .label-button } 
   
-Thu, Feb 23
+Thu, Mar 1
 : **Function closure idioms**  
 : [**Slides**](){: .label-button }
   [**Code**](){: .label-button } 
