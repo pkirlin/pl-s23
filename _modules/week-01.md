@@ -70,5 +70,5 @@ Tue, Feb 28
   
 Thu, Mar 1
 : **Function closure idioms**  
-: [**Slides**](){: .label-button }
-  [**Code**](){: .label-button } 
+: [**Slides**](lectures/pl-lect13-slides.pdf){: .label-button }
+  [**Code**](lectures/pl-lect13-code.rkt){: .label-button } 
