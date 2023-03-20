@@ -68,7 +68,23 @@ Tue, Feb 28
 : [**Slides**](lectures/pl-lect12-slides.pdf){: .label-button }
   [**Code**](lectures/pl-lect12-code.rkt){: .label-button } 
   
-Thu, Mar 1
+Thu, Mar 2
 : **Function closure idioms**  
 : [**Slides**](lectures/pl-lect13-slides.pdf){: .label-button }
   [**Code**](lectures/pl-lect13-code.rkt){: .label-button } 
+  
+Tue, Mar 7
+: **Midterm exam**  
+  
+Thu, Mar 9
+: **Designing a stack ADT, mutation**  
+: [**Slides**](lectures/pl-lect13-slides.pdf){: .label-button }
+  [**Code**](lectures/pl-lect13-code.rkt){: .label-button } 
+  
+Thu, Mar 14
+: **Spring break**  
+  
+Thu, Mar 16
+: **Spring break**  
+  
+
