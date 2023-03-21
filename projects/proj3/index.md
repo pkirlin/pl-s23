@@ -3,7 +3,7 @@ title: Project 1
 parent: Projects
 ---
 
-# Programming Languages: Project 1
+# Programming Languages: Project 3
 
 <script>
 MathJax = {
@@ -16,9 +16,6 @@ MathJax = {
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script>
 
-
-
-# COMP 360, Project 3 
 
 In this assignment, you will explore using mutation and closures to create a new data type in an 
 object-oriented style, as well as implement a classic algorithm using the functional programming 

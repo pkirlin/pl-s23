@@ -81,10 +81,14 @@ Thu, Mar 9
 : [**Slides**](lectures/pl-lect13-slides.pdf){: .label-button }
   [**Code**](lectures/pl-lect13-code.rkt){: .label-button } 
   
-Thu, Mar 14
+Tue, Mar 14
 : **Spring break**  
   
 Thu, Mar 16
 : **Spring break**  
-  
 
+Tue, Mar 21
+: **Delayed evaluation, streams**
+: [**Slides**](lectures/pl-streams1-slides.pdf){: .label-button }
+  [**Code**](lectures/pl-streams1-code.rkt){: .label-button } 
+: **Project**{: .label .label-proj } [**Project 3**](projects/proj3) (due Thu, Mar 30)
