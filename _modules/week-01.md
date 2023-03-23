@@ -92,3 +92,6 @@ Tue, Mar 21
 : [**Slides**](lectures/pl-streams1-slides.pdf){: .label-button }
   [**Code**](lectures/pl-streams1-code.rkt){: .label-button } 
 : **Project**{: .label .label-proj } [**Project 3**](projects/proj3) (due Thu, Mar 30)
+
+Thu, Mar 23
+: **Streams**
