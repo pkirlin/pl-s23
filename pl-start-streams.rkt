@@ -29,11 +29,11 @@
 ;; Samples:
 
 (define (make-constant-stream v)
-  (stream-cons v (make-constant-stream v))
+  (stream-cons v (make-constant-stream v)))
 
 (define ones (stream-cons 1 ones))
 
 (define (ints-from n)
-  (stream-cons n (ints-from (+ n 1)))
+  (stream-cons n (ints-from (+ n 1))))
 
 (define ints-from-1 (ints-from 1))
