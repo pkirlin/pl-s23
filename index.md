@@ -34,6 +34,7 @@ Programs](https://mitp-content-server.mit.edu/books/content/sectbyfn/books_pres_
 - Online Scheme interpreters (very similar to Racket):
   - [Repl.it](https://replit.com/new/scheme), [One that can draw box-and-pointer diagrams](http://xuanji.appspot.com/js-scheme-stk/index.html)  (Try typing 
 `'(1 2 3)` at the prompt.)
+- [Starting stream code](pl-start-streams.rkt)
 
 ## Calendar
 {% for module in site.modules %}
