@@ -1,0 +1,60 @@
+Interpreters, Day 1, Notes
+
+Variable values are stored in hash tables:
+
+Make a hash table:                                   (define ht (make-hash))
+Put a key-value pair into a hash table:              (hash-set! ht key value)
+Test if a key is in a hash table:                    (hash-has-key? ht key)
+Retrieve a value from a hash table based on the key: (hash-ref ht key)
+
+Examples:
+
+(define table (make-hash))
+(hash-set! table 'a 5)
+(hash-set! table 'b 10)
+(hash-has-key? table 'a) ==> #t
+(hash-has-key? table 'b) ==> #t
+(hash-has-key? table 'c) ==> #f
+(hash-ref table 'a) ==> 5
+(hash-ref table 'c) ==> *error*
+
+Math examples
+=============
+(add 3 4)
+(sub 4 5)
+(mul 2 8)
+(div 20 4)
+
+Sub-expressions
+===============
+(add (add 3 4) (sub 4 5))
+(sub (div 20 4) (mul 3 (add 1 1)))
+
+Variables
+=========
+(define x 4)
+x
+(define y (add 4 9))
+y
+(define z (mul 2 x))
+z
+; What happens if you re-define a variable?
+
+If statements
+=============
+(ifzero 0 10 -10) ==> 10
+(ifzero 1 10 -10) ==> -10
+
+(define a 0)
+(define b 2)
+(define c 4)
+(ifzero a b c) ==> 2
+
+(ifzero (add -1 1) (sub a b) (mul b c)) ==> -2
+
+Challenges
+==========
+- Add more math functions, like absolute value, square root, etc.
+- Add the ability to "undefine" a variable.  Use hash-remove!.
+- Add an alternate if statement that takes four arguments.  If the
+  first two args are equal, return the third arg, else the fourth.
