@@ -69,7 +69,8 @@ creates an infinite stream of integers:
     Think about how you would generalize this.
     
 2.  Pascal's triangle is an infinitely large triangular structure of numbers that looks like this:
-    
+
+    ```    
                 1
               1   1
             1   2   1
@@ -77,6 +78,7 @@ creates an infinite stream of integers:
         1   4   6   4   1
       1   5  10  10   5   1
     . . . . . etc . . . . . .
+    ```
     
     One way to define the triangle is to say that the first two rows of the triangle consist of one 1 
 and two 1's, respectively. Each further row is begins and ends with a 1, and each "interior" number in a 
@@ -92,16 +94,20 @@ generates the next row.
 triangle.**
     
     Example:  
-    `(define pascal . . . whatever you decide . . . )   (stream-enumerate pascal 6)   ==> '((1) (1 1) (1 
-2 1) (1 3 3 1) (1 4 6 4 1) (1 5 10 10 5 1))`
+    ```
+    (define pascal . . . whatever you decide . . . )   
+    (stream-enumerate pascal 6)   ==> '((1) (1 1) (1 2 1) (1 3 3 1) (1 4 6 4 1) (1 5 10 10 5 1))
+    ```
     
 3.  Define a function called `stream-flatten` that takes an infinite stream of *lists* and returns a new 
 stream consisting of all the elements from the first list, followed by all the elements from the second 
 list, and so on.
     
     Example: _(This assumes you've already written the Pascal's triangle part from above.)_  
-    `(define flatpascal (stream-flatten pascal))   (stream-enumerate flatpascal 20)   ==> '(1 1 1 1 2 1 
-1 3 3 1 1 4 6 4 1 1 5 10 10 5)`
+    ```
+    (define flatpascal (stream-flatten pascal))   
+    (stream-enumerate flatpascal 20)   ==> '(1 1 1 1 2 1 1 3 3 1 1 4 6 4 1 1 5 10 10 5)
+    ```
     
 4.  Define a function called `stream-merge` that takes two infinite streams of numbers where each 
 individual stream is in sorted order. `stream-merge` returns a new stream consisting of all the items 
@@ -109,9 +115,11 @@ from the two streams combined in sorted order. If there are duplicate numbers, t
 in the merged stream.
     
     Example:  
-    `(define pow2 (make-recursive-stream (lambda (x) (* x 2)) 1))   (define pow3 (make-recursive-stream 
-(lambda (x) (* x 3)) 1))   (stream-enumerate (stream-merge pow2 pow3) 20)   ==> '(1 1 2 3 4 8 9 16 27 32 
-64 81 128 243 256 512 729 1024 2048 2187)`
+    ```
+    (define pow2 (make-recursive-stream (lambda (x) (* x 2)) 1))   
+    (define pow3 (make-recursive-stream (lambda (x) (* x 3)) 1))   
+    (stream-enumerate (stream-merge pow2 pow3) 20)   ==> '(1 1 2 3 4 8 9 16 27 32 64 81 128 243 256 512 729 1024 2048 2187)
+    ```
     
 
 ### Part B
