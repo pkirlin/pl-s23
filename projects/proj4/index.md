@@ -189,17 +189,17 @@ argument to the `make-sine-function` function, and *t* is the argument to the *r
   ```
   > (make-sine-function 1)
   #<procedure:...>
-> (define sine1 (make-sine-function 1))  <-- one Hz (cycle/sec)
-> (sine1 0)
-0
-> (sine1 .25)
-0.2
-> (sine1 .5)
-2.4492935982947065e-17   <-- basically zero
-> (sine1 .75)
--0.2
-> (sine1 1)
--4.898587196589413e-17   <-- basically zero
+  > (define sine1 (make-sine-function 1))  <-- one Hz (cycle/sec)
+  > (sine1 0) 
+  0
+  > (sine1 .25)
+  0.2
+  > (sine1 .5)
+  2.4492935982947065e-17   <-- basically zero
+  > (sine1 .75)
+  -0.2
+  > (sine1 1)
+  -4.898587196589413e-17   <-- basically zero
   ```
 
 6. Define a stream called `sampling-stream` that is a stream of numbers, starting from zero, and each 
@@ -207,12 +207,10 @@ successive number is 1/44100 higher than the previous one.  This can be done wit
 `make-recursive-stream`.
   Example:
   ```
-  > sampling-stream
   > (stream-enumerate sampling-stream 20)
-'(0 1/44100 1/22050 1/14700 1/11025 1/8820 1/7350 1/6300 2/11025 1/4900 1/4410 11/44100 1/3675 13/44100 
-1/3150 1/2940 4/11025 17/44100 1/2450 19/44100)
-> 
-```
+  '(0 1/44100 1/22050 1/14700 1/11025 1/8820 1/7350 1/6300 2/11025 1/4900 1/4410 11/44100 1/3675 
+  13/44100 1/3150 1/2940 4/11025 17/44100 1/2450 19/44100)
+  ```
 
 7. Define a function called `make-sine-stream` that takes a frequency as an argument. This function 
 returns an infinite stream of floating point numbers representing a sine wave that ranges between -0.2 
