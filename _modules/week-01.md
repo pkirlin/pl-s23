@@ -101,7 +101,6 @@ Thu, Mar 23
 Tue, Mar 28
 : **More streams**
 : [**Slides**](lectures/pl-streams3-slides.pdf){: .label-button }
-  [**Code**](lectures/pl-streams3-code.rkt){: .label-button } 
 
 Thu, Mar 30
 : **Interpreters I**

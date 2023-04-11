@@ -1,0 +1,203 @@
+----------
+package ex1;
+
+public class ThreadEx1 {
+
+	public static void main(String args[]) {
+		SimpleThread t1 = new SimpleThread();
+		t1.start();
+	}
+}
+
+class SimpleThread extends Thread {
+
+	public void run() {
+		System.out.println("I am a thread!");
+	}
+}
+---------
+package ex2;
+
+public class ThreadEx2 {
+
+	public static void main(String args[]) {
+		SimpleThread t1 = new SimpleThread();
+		SimpleThread t2 = new SimpleThread();
+		t1.start();
+		t2.start();
+	}
+}
+
+class SimpleThread extends Thread {
+
+	public void run() {
+		System.out.println("I am a thread!");
+	}
+}
+------------
+package counting;
+
+public class CountingEx {
+
+	public static void main(String args[]) {
+		CountingThread t1 = new CountingThread(10);
+		CountingThread t2 = new CountingThread(10);
+		t1.start();
+		t2.start();
+		System.out.println("Both threads have started.");
+	}
+}
+
+class CountingThread extends Thread {
+
+	private int max;
+
+	public CountingThread(int m) {
+		this.max = m;
+	}
+
+	public void run() {
+		for (int x = 0; x <= max; x++) {
+			System.out.println(x);
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+-------------
+package bank;
+
+class BankAccount
+{
+	private int balance = 0;
+	public void deposit(int x) { balance += x; }
+	public void withdraw(int x) { 
+		if (balance >= x) { balance -= x; }
+	}
+	public int getBalance() { return balance; }
+}
+
+class Transaction extends Thread
+{
+	private BankAccount acc;
+	private int whatToDo;
+
+	public Transaction(BankAccount acc, int x) {
+		this.acc = acc;
+		this.whatToDo = x;
+	}
+
+	public void run()
+	{
+		if (whatToDo > 0)
+			acc.deposit(whatToDo);
+		else if (whatToDo < 0)
+			acc.withdraw(-whatToDo);
+		int bal = acc.getBalance();
+		if (bal < 0) {
+			System.out.println("balance went negative: " + bal);
+			System.exit(1);
+		}
+	}
+}
+
+public class Bank
+{
+	public static void main(String args[])
+	{
+		BankAccount acc = new BankAccount();
+
+		while (true)   // attempt forever to get negative balance
+		{
+			Transaction t1 = new Transaction(acc, 1);
+			Transaction t2 = new Transaction(acc, -1);
+			Transaction t3 = new Transaction(acc, -1);
+			t1.start();
+			t2.start();
+			t3.start();
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------
+package bank2;
+
+class BankAccount {
+
+	private int balance = 0;
+
+	public  void deposit(int x) {
+		balance += x;
+	}
+
+	public  void withdraw(int x) {
+		if (balance >= x) {
+			balance -= x;
+		}
+	}
+
+	public int getBalance() {
+		return balance;
+	}
+}
+
+class DepositorThread extends Thread {
+
+	private BankAccount acc;
+
+	public DepositorThread(BankAccount acc) {
+		this.acc = acc;
+	}
+
+	public void run() {
+		for (int x = 0; x < 1000; x++) {
+			acc.deposit(1);
+		}
+		System.out.println("done");
+	}
+}
+
+public class Race {
+
+	public static void main(String args[]) throws InterruptedException {
+
+		BankAccount acc = new BankAccount();
+
+		for (int x = 0; x < 5; x++) {
+			DepositorThread i = new DepositorThread(acc);
+			i.start();
+		}
+		
+		Thread.sleep(1000); // hack: wait for all the threads to finish
+		System.out.println("Account has " + acc.getBalance()); // should have $5000
+	}
+}
