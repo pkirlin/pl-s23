@@ -214,7 +214,8 @@ successive number is 1/44100 higher than the previous one.  This can be done wit
 
 7. Define a function called `make-sine-stream` that takes a frequency as an argument. This function 
 returns an infinite stream of floating point numbers representing a sine wave that ranges between -0.2 
-and +0.2 that has the given frequency of 1/freq, and is sampled 44,100 times per second. As an example, 
+and +0.2 that has the given frequency of `1/freq`, and is sampled 44,100 times per second. As 
+an example, 
 say we call `(define s (make-sine-stream 441))`. This gives us a stream of floating point numbers 
 representing a sine wave that oscillates 441 times per second, sampled at 44,100 times per second. The 
 first 100 numbers in the sequence will therefore represent one cycle of the wave.
