@@ -95,11 +95,29 @@ Tue, Mar 21
 
 Thu, Mar 23
 : **Streams**
+: [**Slides**](lectures/pl-streams2-slides.pdf){: .label-button }
+  [**Code**](lectures/pl-streams2-code.rkt){: .label-button } 
 
 Tue, Mar 28
 : **More streams**
+: [**Slides**](lectures/pl-streams3-slides.pdf){: .label-button }
+  [**Code**](lectures/pl-streams3-code.rkt){: .label-button } 
 
 Thu, Mar 30
 : **Interpreters I**
 : [**Slides**](lectures/unit-interpreters/interp1-slides.pdf){: .label-button }
   [**Code**](lectures/unit-interpreters/interpreter-start-day1.rkt){: .label-button } 
+  
+Tue, Apr 4
+: **Interpreters II**
+: [**Slides**](lectures/unit-interpreters/interp1-slides.pdf){: .label-button }
+  [**Code**](lectures/unit-interpreters/interpreter-start-day1.rkt){: .label-button } 
+  
+Thu, Apr 6
+: **Easter break**
+  
+Tue, Apr 11
+: **Finish interpreters, start threading**
+
+Thu, Apr 13
+: **More threading**
