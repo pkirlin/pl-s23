@@ -10,10 +10,10 @@ public class CountingSleepEx {
 		System.out.println("Both threads have started.");
 		
 		// make this line appear after t1 and t2 are done.
-		try {
+		/*try {
 			t1.join();
 			t2.join();
-		} catch (InterruptedException e) {}
+		} catch (InterruptedException e) {}*/
 		System.out.println("Both threads have ended.");
 	}
 }
