@@ -27,13 +27,17 @@ class DepositorThread extends Thread {
 		this.acc = acc;
 	}
 
-	public void run() {
-		for (int x = 0; x < 1000; x++) {
-			acc.deposit(1);
+	/*public void run() {
+			for (int x = 0; x < 1000; x++) {
+				synchronized (acc) {
+					acc.deposit(1);
+				}
+				// PAUSE
+			}
 		}
-		System.out.println("done");
+		System.out.println("done");*/
 	}
-}
+
 
 public class Race {
 

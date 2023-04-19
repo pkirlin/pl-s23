@@ -36,7 +36,7 @@ public class Philosophers {
 		Philosopher p2 = new Philosopher(f2, f3);
 		Philosopher p3 = new Philosopher(f3, f4);
 		Philosopher p4 = new Philosopher(f4, f5);
-		Philosopher p5 = new Philosopher(f5, f1);
+		Philosopher p5 = new Philosopher(f1, f5);
 		
 		p1.start();
 		p2.start();
