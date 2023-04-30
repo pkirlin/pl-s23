@@ -117,19 +117,20 @@ Thu, Apr 6
 : **Easter break**
   
 Tue, Apr 11
-: **Finish interpreters, start threading**
+: **Finish interpreters, start threading**  
   [**Code**](lectures/unit-interpreters/complete-interpreter.rkt){: .label-button } 
 
 Thu, Apr 13
 : **Threading**
 : [**Slides**](lectures/unit-java/pl-java-threads.pdf){: .label-button }
+: **Project**{: .label .label-proj } [**Project 5**](projects/proj5) (due Wed, May 3)
 
 Tue, Apr 18
-: **Threading**
+: **Threading**  
   (See slides above)
 
 Thu, Apr 20
-: **Threading**
+: **Threading**  
   (See slides above)
 
 Tue, Apr 25
