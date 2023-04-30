@@ -121,3 +121,14 @@ Tue, Apr 11
 
 Thu, Apr 13
 : **More threading**
+
+Tue, Apr 18
+
+Thu, Apr 20
+
+Tue, Apr 25
+: **Click the rectangle lab**
+
+Thu, Apr 27
+: **Victory lap**
+: [**Slides**](lectures/unit-wrapup/pl-wrapup-slides.pdf){: .label-button }
