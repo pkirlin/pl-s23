@@ -118,16 +118,25 @@ Thu, Apr 6
   
 Tue, Apr 11
 : **Finish interpreters, start threading**
+  [**Code**](lectures/unit-interpreters/complete-interpreter.rkt){: .label-button } 
 
 Thu, Apr 13
-: **More threading**
+: **Threading**
+: [**Slides**](lectures/unit-java/pl-java-threads.pdf){: .label-button }
 
 Tue, Apr 18
+: **Threading**
+  (See slides above)
 
 Thu, Apr 20
+: **Threading**
+  (See slides above)
 
 Tue, Apr 25
-: **Click the rectangle lab**
+: **Event-driven programming: Click the rectangle lab**
+: [**Slides**](lectures/unit-events/pl-events-slides.pdf){: .label-button }
+  [**Code**](https://www.cs.rhodes.edu/~kirlinp/courses/proglang/f17/lectures/unit-events/click-rectangle-start.txt){: .label-button } 
+  
 
 Thu, Apr 27
 : **Victory lap**
